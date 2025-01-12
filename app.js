@@ -167,11 +167,11 @@ function createScatterPlot() {
   svg
     .selectAll("path")
     .transition()
-    // .delay((d) => {
-    //   return d.rank * 6;
-    // })
-    // .duration(3000)
-    .duration(300)
+    .delay((d) => {
+      return d.rank * 3;
+    })
+    .duration(3000)
+    // .duration(300)
     .attr("transform", function (d) {
       // Find this path’s bounding box
       const b = this.getBBox();
@@ -244,8 +244,19 @@ function createScatterPlot() {
               )
             );
 
-          tooltip.style("left", event.pageX + 10 + "px");
-          tooltip.style("top", event.pageY + 10 + "px");
+          let left = event.pageX + 10;
+          let top = event.pageY + 10;
+
+          if (left + tooltip.node().getBoundingClientRect().width > width) {
+            left = width - tooltip.node().getBoundingClientRect().width - 10;
+          }
+
+          if (top + tooltip.node().getBoundingClientRect().height > height) {
+            top = height - tooltip.node().getBoundingClientRect().height - 10;
+          }
+
+          tooltip.style("left", left + "px");
+          tooltip.style("top", top + "px");
         })
         .on("mouseout", function () {
           d3.select("#tooltip").style("display", "none");
@@ -258,9 +269,9 @@ function transformToCircles(selection) {
   return (
     selection
       .transition()
-      // .delay((d) => d.rank * 8)
-      // .duration(3000)
-      .duration(300)
+      .delay((d) => d.rank * 8)
+      .duration(3000)
+      // .duration(300)
       .attrTween("d", function (d, i) {
         return flubber.toCircle(
           path(d),
