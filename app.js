@@ -68,7 +68,7 @@ Promise.all(promises).then(function (data) {
 function wrangleData() {
   //extract features (opcine)
   const topoData = topojson.feature(croatia, croatia.objects.hrvatska);
-//   console.log(topoData); //556 opcina
+  //   console.log(topoData); //556 opcina
 
   projection = d3
     .geoAlbers()
@@ -82,16 +82,43 @@ function wrangleData() {
     );
   path = d3.geoPath(projection);
 
-  let populationMax = d3.max(populationData, (d) => d.population);
-  radiusScale = d3.scaleSqrt().domain([0, populationMax]).range([0, 25]);
+  let populationMax = d3.max(populationData, (d) => +d.Population);
+  radiusScale = d3.scaleSqrt().domain([0, populationMax]).range([1, 25]);
 
   municipalities = getMunicipalityData(topoData);
 
   console.log(municipalities);
 
-  renderGeography(topoData, municipalities);
+  let opcineSelection = renderGeography(topoData, municipalities);
+
+  transformToScatter(opcineSelection);
 }
 
+function transformToScatter(selection) {
+  selection
+    .transition()
+    .delay((d) => d.rank * 2)
+    .duration(4000)
+    .attrTween("d", function (d, i) {
+      return flubber.toCircle(
+        path(d),
+        d.properties.centroid[0],
+        d.properties.centroid[1],
+        d.properties.radius,
+        {
+          maxSegmentLength: 2,
+        }
+      );
+    });
+  // .on("end", (transition, d) => {
+  // console.log(transition, d);
+  // d3.select(`#path-${d}`).lower();
+  // d3.select(`#circle-${d}`).attr("opacity", 1);
+  // })
+  // .remove();
+}
+
+// helper functions:
 function renderGeography(topoData, municipalities) {
   // the div where svg needs to be added is called "map" (id), gett full width and height of the div
 
@@ -101,16 +128,21 @@ function renderGeography(topoData, municipalities) {
     .attr("width", width)
     .attr("height", height);
 
-  svg
+  let opcineSelection = svg
     .append("g")
     .selectAll("path")
     .data(municipalities)
     .enter()
     .append("path")
     .attr("fill", (county) => {
-      if (!county.properties.votes.primorac || !county.properties.votes.milanovic) {
+      if (
+        !county.properties.votes.primorac ||
+        !county.properties.votes.milanovic
+      ) {
         return "lightgrey";
-      } else if (county.properties.votes.primorac > county.properties.votes.milanovic) {
+      } else if (
+        county.properties.votes.primorac > county.properties.votes.milanovic
+      ) {
         return color(
           county.properties.votes.primorac / county.properties.votes.count
         );
@@ -121,40 +153,37 @@ function renderGeography(topoData, municipalities) {
       }
     })
     .attr("stroke", "white")
-    .attr("d", path)
-    .append("title")
-    .text((d) => {      
-      if (d.properties.votes == null) return "";
-      else {
-        return [
-          d.properties.name,
-          `${d3.format(".1%")(
-            d.properties.votes.milanovic / d.properties.votes.count
-          )} milanovic`,
-          `${d3.format(".1%")(
-            d.properties.votes.primorac / d.properties.votes.count
-          )} primorac`,
-        ].join(" – ");
-      }
-    });
+    .attr("d", path);
+
+  opcineSelection.append("title").text((d) => {
+    if (d.properties.votes == null) return "";
+    else {
+      return [
+        d.properties.name,
+        `${d3.format(".1%")(
+          d.properties.votes.milanovic / d.properties.votes.count
+        )} milanovic`,
+        `${d3.format(".1%")(
+          d.properties.votes.primorac / d.properties.votes.count
+        )} primorac`,
+      ].join("\n");
+    }
+  });
+
+  return opcineSelection;
 }
 
-// helper functions:
-
 function getMunicipalityData(topoData) {
-  // first, read the population csv
-
-  //   let retval = null;
-  return topoData.features
+  let retval = topoData.features
     .map((municipality) => {
-      // const { population } = populations.find(
-      //   (p) => p.id === municipality.properties.ID_2
-      // );
-
       let population = populationData.find(
         (d) =>
           d.Name.toUpperCase() == municipality.properties.NAME_2.toUpperCase()
       );
+
+      // if (!population) {
+      //   console.log(municipality.properties.NAME_2);
+      // }
 
       population = {
         id: municipality.properties.ID_2,
@@ -168,8 +197,8 @@ function getMunicipalityData(topoData) {
         (d) => d.gropNaziv.toUpperCase() == name.toUpperCase()
       );
 
-      if(!votingDatum) {
-        console.log(name);
+      if (!votingDatum) {
+        console.log(`Missing match: ${name}`);
         console.log(municipality.properties);
       }
 
@@ -187,7 +216,7 @@ function getMunicipalityData(topoData) {
           centroid: projection(
             turf.centroid(municipality.geometry).geometry.coordinates
           ),
-          radius: radiusScale(population),
+          radius: radiusScale(population.population),
         },
       };
     })
@@ -215,4 +244,6 @@ function getMunicipalityData(topoData) {
         geometry,
       };
     });
+
+  return retval;
 }
