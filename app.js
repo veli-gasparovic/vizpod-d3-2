@@ -16,10 +16,13 @@ let color = d3.scaleSequential(d3.interpolateRdBu).domain([-1, 1]);
 let projection = null;
 let path = null;
 
+let izbori2025 = null;
+
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
 promises.push(d3.json("izbori2020.json"));
 promises.push(d3.csv("jls.csv"));
+promises.push(d3.json("combined.json"));
 
 //fetch all files:
 Promise.all(promises).then(function (data) {
@@ -27,8 +30,12 @@ Promise.all(promises).then(function (data) {
   populationData = data[1];
   let electionDataRaw = data[2];
   jlsData = data[3];
+  izbori2025 = data[4];
 
-  votingData = electionDataRaw.map((d) => {
+  // console.log(electionDataRaw);
+  // console.log(izbori2025);
+
+  votingData = izbori2025.map((d) => {
     return {
       zupNaziv: d.zupNaziv,
       gropNaziv: d.gropNaziv,
@@ -36,8 +43,8 @@ Promise.all(promises).then(function (data) {
         (accumulator, currentValue) =>
           accumulator.glasova + currentValue.glasova
       ),
-      kgk: d.lista.find((d) => d.jedinstvenaSifra == 2).glasova,
-      zoky: d.lista.find((d) => d.jedinstvenaSifra == 1).glasova,
+      primorac: d.lista.find((d) => d.jedinstvenaSifra == 2).glasova,
+      milanovic: d.lista.find((d) => d.jedinstvenaSifra == 1).glasova,
     };
   });
 
@@ -101,33 +108,32 @@ function renderGeography(topoData, municipalities) {
     .enter()
     .append("path")
     .attr("fill", (county) => {
-      if (!county.properties.votes.kgk || !county.properties.votes.zoky) {
-        return "white";
-      } else if (county.properties.votes.kgk > county.properties.votes.zoky) {
+      if (!county.properties.votes.primorac || !county.properties.votes.milanovic) {
+        return "lightgrey";
+      } else if (county.properties.votes.primorac > county.properties.votes.milanovic) {
         return color(
-          county.properties.votes.kgk / county.properties.votes.count
+          county.properties.votes.primorac / county.properties.votes.count
         );
       } else {
         return color(
-          -county.properties.votes.zoky / county.properties.votes.count
+          -county.properties.votes.milanovic / county.properties.votes.count
         );
       }
     })
     .attr("stroke", "white")
     .attr("d", path)
     .append("title")
-    .text((d) => {
-      return JSON.stringify(d);
+    .text((d) => {      
       if (d.properties.votes == null) return "";
       else {
         return [
           d.properties.name,
           `${d3.format(".1%")(
-            d.properties.votes.zoky / d.properties.votes.count
-          )} Zoky`,
+            d.properties.votes.milanovic / d.properties.votes.count
+          )} milanovic`,
           `${d3.format(".1%")(
-            d.properties.votes.kgk / d.properties.votes.count
-          )} KGK`,
+            d.properties.votes.primorac / d.properties.votes.count
+          )} primorac`,
         ].join(" – ");
       }
     });
@@ -161,6 +167,11 @@ function getMunicipalityData(topoData) {
       const votingDatum = votingData.find(
         (d) => d.gropNaziv.toUpperCase() == name.toUpperCase()
       );
+
+      if(!votingDatum) {
+        console.log(name);
+        console.log(municipality.properties);
+      }
 
       const jlsDatum = jlsData.find(
         (d) => d.jls.toUpperCase() == name.toUpperCase()
