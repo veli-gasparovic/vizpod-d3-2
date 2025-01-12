@@ -91,14 +91,23 @@ function wrangleData() {
 
   let opcineSelection = renderGeography(topoData, municipalities);
 
-  transformToScatter(opcineSelection);
+  transformToCircles(opcineSelection)
+    .end()
+    .then(() => {
+      console.log("transfored to circles.");
+    });
 }
 
-function transformToScatter(selection) {
-  selection
+function createScatterPlot() {
+  
+}
+
+// helper functions:
+function transformToCircles(selection) {
+  return selection
     .transition()
-    .delay((d) => d.rank * 2)
-    .duration(4000)
+    .delay((d) => d.rank * 8)
+    .duration(3000)
     .attrTween("d", function (d, i) {
       return flubber.toCircle(
         path(d),
@@ -110,15 +119,8 @@ function transformToScatter(selection) {
         }
       );
     });
-  // .on("end", (transition, d) => {
-  // console.log(transition, d);
-  // d3.select(`#path-${d}`).lower();
-  // d3.select(`#circle-${d}`).attr("opacity", 1);
-  // })
-  // .remove();
 }
 
-// helper functions:
 function renderGeography(topoData, municipalities) {
   // the div where svg needs to be added is called "map" (id), gett full width and height of the div
 
