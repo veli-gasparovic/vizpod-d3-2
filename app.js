@@ -20,17 +20,17 @@ let izbori2025 = null;
 
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
-promises.push(d3.json("izbori2020.json"));
-promises.push(d3.csv("jls.csv"));
+// promises.push(d3.json("izbori2020.json"));
+promises.push(d3.csv("jls.csv", d3.autoType));
 promises.push(d3.json("combined.json"));
 
 //fetch all files:
 Promise.all(promises).then(function (data) {
   croatia = data[0];
   populationData = data[1];
-  let electionDataRaw = data[2];
-  jlsData = data[3];
-  izbori2025 = data[4];
+  // let electionDataRaw = data[2];
+  jlsData = data[2];
+  izbori2025 = data[3];
 
   // console.log(electionDataRaw);
   // console.log(izbori2025);
@@ -95,11 +95,15 @@ function wrangleData() {
     .end()
     .then(() => {
       console.log("transfored to circles.");
+      createScatterPlot();
     });
 }
 
-function createScatterPlot() {
-  
+function createScatterPlot() {  
+  //y scale: "↑ Prosječni dohodak po stanovniku", field "dohodak"
+  //x scale: "Stupanj obrazovanja (VSS, 20-65) →", field "obrazovanje"
+
+
 }
 
 // helper functions:
