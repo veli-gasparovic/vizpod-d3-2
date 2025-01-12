@@ -10,11 +10,16 @@ let promises = [];
 let radiusScale = null;
 
 let width = document.getElementById("map").clientWidth;
+
+// cap with to 1200:
+width = width > 1200 ? 1200 : width;
+
 let height = document.getElementById("map").clientHeight;
 let color = d3.scaleSequential(d3.interpolateRdBu).domain([-1, 1]);
 
 let projection = null;
 let path = null;
+let svg = null;
 
 let izbori2025 = null;
 
@@ -57,6 +62,7 @@ Promise.all(promises).then(function (data) {
     populations.push({
       id: opcina.properties.ID_2,
       name: opcina.properties.NAME_2,
+      // zup_name: opcina.properties.NAME_1,
       found: opcinaFound ? true : false,
       population: opcinaFound ? +opcinaFound.Population : 0,
     });
@@ -83,13 +89,13 @@ function wrangleData() {
   path = d3.geoPath(projection);
 
   let populationMax = d3.max(populationData, (d) => +d.Population);
-  radiusScale = d3.scaleSqrt().domain([0, populationMax]).range([1, 25]);
+  radiusScale = d3.scaleSqrt().domain([0, populationMax]).range([1.25, 25]);
 
   municipalities = getMunicipalityData(topoData);
 
   console.log(municipalities);
 
-  let opcineSelection = renderGeography(topoData, municipalities);
+  let opcineSelection = renderGeography();
 
   transformToCircles(opcineSelection)
     .end()
@@ -99,36 +105,178 @@ function wrangleData() {
     });
 }
 
-function createScatterPlot() {  
+function createScatterPlot() {
   //y scale: "↑ Prosječni dohodak po stanovniku", field "dohodak"
   //x scale: "Stupanj obrazovanja (VSS, 20-65) →", field "obrazovanje"
 
+  const margin = { top: 70, right: 30, bottom: 30, left: 40 };
+  const y = d3
+    .scaleLinear()
+    .domain(d3.extent(jlsData, (d) => d.dohodak))
+    .rangeRound([height - margin.bottom, margin.top])
+    .clamp(true);
 
+  const x = d3
+    .scaleLinear()
+    .domain(d3.extent(jlsData, (d) => d.obrazovanje))
+    .rangeRound([margin.left, width - margin.right]);
+
+  const yAxis = (g) =>
+    g
+      .attr("transform", `translate(${margin.left},0)`)
+      .attr("font-size", 14)
+      .call(
+        d3.axisLeft(y).ticks(null, ",d").tickFormat(d3.format(".2s"))
+        // .tickFormat(d => (d == 100 ? `${d}%` : d))
+      )
+      .call((g) => g.select(".domain").remove())
+      .call((g) =>
+        g
+          .append("text")
+          .attr("x", -margin.left + 15)
+          .attr("y", y(d3.max(jlsData, (d) => d.dohodak)))
+          .attr("fill", "currentColor")
+          .attr("text-anchor", "start")
+          .text("↑ Prosječni dohodak po stanovniku")
+          .append("title")
+          .text(
+            "Dohodak po stanovniku iz članka 2. točke 2. ove Uredbe izračunava se kao omjer ukupnog iznosa dohotka kojega su tijekom jednoga poreznog razdoblja (kalendarska godina) ostvarili porezni obveznici, fizičke osobe s prebivalištem ili uobičajenim boravištem na području jedinice lokalne, odnosno područne (regionalne) samouprave za koju se vrši izračun, i broja stanovnika koji žive na području te jedinice.\nDohodak iz stavka 1. ovoga članka utvrđuje se prema zakonu kojim se uređuje porez na dohodak, a uključuje dohodak ostvaren od nesamostalnog rada i dohodak ostvaren od samostalne djelatnosti.\nU ukupan iznos dohotka iz stavka 1. ovoga članka uračunava se i dobit koju su ostvarile fizičke osobe od obavljanja samostalne djelatnosti tijekom jednoga poreznog razdoblja (kalendarska godina) na području jedinice lokalne, odnosno područne (regionalne) samouprave za koju se vrši izračun.\nDohotkom od samostalne djelatnosti u smislu stavka 1. ovoga članka smatra se dohodak umanjen za propisana umanjenja i preneseni gubitak, sukladno zakonu kojim se uređuje porez na dohodak.\nDobiti iz stavka 3. ovoga članka smatra se dobit nakon propisanih umanjenja i uvećanja dobiti, sukladno zakonu kojim se uređuje porez na dobit.\nZa izračun pokazatelja iz stavka 1. ovoga članka koriste se podaci Porezne uprave o isplaćenim dohocima i podaci Državnog zavoda za statistiku o broju stanovnika na razini jedinica lokalne, odnosno područne (regionalne) samouprave."
+          )
+      );
+
+  const xAxis = (g) =>
+    g
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(d3.axisBottom(x).ticks(width / 80))
+      .call((g) => g.select(".domain").remove())
+      .call((g) =>
+        g
+          .append("text")
+          .attr("x", width - margin.right)
+          .attr("y", -10)
+          .attr("fill", "currentColor")
+          .attr("text-anchor", "end")
+          .text("Stupanj obrazovanja (VSS, 20-65) →")
+          .append("title")
+          .text(
+            "Stopa obrazovanosti iz članka 2. točke 5. ove Uredbe izračunava se kao udjel stanovništva sa završenim visokim obrazovanjem u ukupnom stanovništvu, u dobi između 20 i 65 godina, na području jedinice lokalne, odnosno područne (regionalne) samouprave.\nZa izračun pokazatelja iz stavka 1. ovoga članka koriste se podaci Državnog zavoda za statistiku o obrazovnoj strukturi stanovništva Republike Hrvatske i broju stanovnika u dobi između 20 i 65 godina na razini jedinica lokalne, odnosno područne (regionalne) samouprave."
+          )
+      );
+  //→
+
+  svg
+    .selectAll("path")
+    .transition()
+    // .delay((d) => {
+    //   return d.rank * 6;
+    // })
+    // .duration(3000)
+    .duration(300)
+    .attr("transform", function (d) {
+      // Find this path’s bounding box
+      const b = this.getBBox();
+      const currentCenterX = b.x + b.width / 2;
+      const currentCenterY = b.y + b.height / 2;
+
+      if (!d.properties.jls.obrazovanje) {
+        console.log(d);
+        return null;
+      }
+
+      // Compute the offset to your target
+      const dx = x(d.properties.jls.obrazovanje) - currentCenterX;
+      const dy = y(d.properties.jls.dohodak) - currentCenterY;
+
+      return `translate(${dx}, ${dy})`;
+    })
+    .attr("opacity", (d) => {
+      if (!d.properties.jls.obrazovanje) {
+        return 0;
+      }
+    })
+    .end()
+    .then(() => {
+      //append x axis and y axis
+      svg
+        .append("g")
+        .call(xAxis)
+        .attr("opacity", 0)
+        .transition()
+        .duration(250)
+        .attr("opacity", 1);
+      svg
+        .append("g")
+        .call(yAxis)
+        .attr("opacity", 0)
+        .transition()
+        .duration(250)
+        .attr("opacity", 1);
+
+      svg
+        .selectAll("path")
+        .on("mouseover", function (event, d) {
+          let tooltip = d3.select("#tooltip");
+          tooltip.style("display", "block");
+
+          tooltip
+            .select("#tooltip-title")
+            .text(d.properties.name.toLowerCase());
+          tooltip.select("#tooltip-subtitle").text(d.properties.zup_name);
+          tooltip
+            .select("#candidate1-total")
+            .text(d3.format(",")(d.properties.votes.milanovic));
+          tooltip
+            .select("#candidate1-percent")
+            .text(
+              d3.format(".2%")(
+                d.properties.votes.milanovic / d.properties.votes.count
+              )
+            );
+
+          tooltip
+            .select("#candidate2-total")
+            .text(d3.format(",")(d.properties.votes.primorac));
+          tooltip
+            .select("#candidate2-percent")
+            .text(
+              d3.format(".2%")(
+                d.properties.votes.primorac / d.properties.votes.count
+              )
+            );
+
+          tooltip.style("left", event.pageX + 10 + "px");
+          tooltip.style("top", event.pageY + 10 + "px");
+        })
+        .on("mouseout", function () {
+          d3.select("#tooltip").style("display", "none");
+        });
+    });
 }
 
 // helper functions:
 function transformToCircles(selection) {
-  return selection
-    .transition()
-    .delay((d) => d.rank * 8)
-    .duration(3000)
-    .attrTween("d", function (d, i) {
-      return flubber.toCircle(
-        path(d),
-        d.properties.centroid[0],
-        d.properties.centroid[1],
-        d.properties.radius,
-        {
-          maxSegmentLength: 2,
-        }
-      );
-    });
+  return (
+    selection
+      .transition()
+      // .delay((d) => d.rank * 8)
+      // .duration(3000)
+      .duration(300)
+      .attrTween("d", function (d, i) {
+        return flubber.toCircle(
+          path(d),
+          d.properties.centroid[0],
+          d.properties.centroid[1],
+          d.properties.radius,
+          {
+            maxSegmentLength: 2,
+          }
+        );
+      })
+  );
 }
 
-function renderGeography(topoData, municipalities) {
-  // the div where svg needs to be added is called "map" (id), gett full width and height of the div
-
-  const svg = d3
+function renderGeography() {
+  svg = d3
     .select("#map")
     .append("svg")
     .attr("width", width)
@@ -161,21 +309,6 @@ function renderGeography(topoData, municipalities) {
     .attr("stroke", "white")
     .attr("d", path);
 
-  opcineSelection.append("title").text((d) => {
-    if (d.properties.votes == null) return "";
-    else {
-      return [
-        d.properties.name,
-        `${d3.format(".1%")(
-          d.properties.votes.milanovic / d.properties.votes.count
-        )} milanovic`,
-        `${d3.format(".1%")(
-          d.properties.votes.primorac / d.properties.votes.count
-        )} primorac`,
-      ].join("\n");
-    }
-  });
-
   return opcineSelection;
 }
 
@@ -194,11 +327,13 @@ function getMunicipalityData(topoData) {
       population = {
         id: municipality.properties.ID_2,
         name: municipality.properties.NAME_2,
+        zup_name: municipality.properties.NAME_1,
         population: population ? +population.Population : 0,
         area: population ? +population.Area : 0,
       };
 
       const name = `${municipality.properties.NAME_2}`;
+      const zup_name = `${municipality.properties.NAME_1}`;
       const votingDatum = votingData.find(
         (d) => d.gropNaziv.toUpperCase() == name.toUpperCase()
       );
@@ -216,6 +351,7 @@ function getMunicipalityData(topoData) {
         ...municipality,
         properties: {
           name,
+          zup_name,
           votes: { ...votingDatum },
           jls: { ...jlsDatum },
           population,

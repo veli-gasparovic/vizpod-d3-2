@@ -1,10 +1,10 @@
 razvijenost_rank,jls,zupanija,razvojna_skupina,dohodak,prihodi,obrazovanje
 1,Kostrena,Primorsko-goranska,8,37199.28,9944.66,0.3917
 2,Medulin,Istarska,8,35982.54,8090.68,0.3525
-3,Zagreb,Zagreb,8,44733.21,6232.49,0.3935
+3,Grad Zagreb,Zagreb,8,44733.21,6232.49,0.3935
 4,Dubrovnik,Dubrovačko-neretvanska,8,38130.42,7394.93,0.3562
 5,Omišalj,Primorsko-goranska,8,38216.62,8607.77,0.2842
-6,Malinska - Dubašnica,Primorsko-goranska,8,30940.95,8939.06,0.2688
+6,MALINSKA-DUBAŠNICA,Primorsko-goranska,8,30940.95,8939.06,0.2688
 7,Funtana - Fontane,Istarska,8,30155.04,11309.64,0.2135
 8,Poreč - Parenzo,Istarska,8,37539.78,6820.12,0.2345
 9,Krk,Primorsko-goranska,8,35240.93,6449.64,0.2459
@@ -61,14 +61,14 @@ razvijenost_rank,jls,zupanija,razvojna_skupina,dohodak,prihodi,obrazovanje
 60,Labin,Istarska,8,37792.34,4428.56,0.2506
 61,Split,Splitsko-dalmatinska,8,33308.78,3402.41,0.3539
 62,Zabok,Krapinsko-zagorska,8,36203.1,3222.76,0.2063
-63,Kaštelir-Labinci - Castelliere-S.Domenica,Istarska,8,29060.59,3381.86,0.1598
+63,KAŠTELIR-LABINCI - CASTELLIERE-S. DOMENICA,Istarska,8,29060.59,3381.86,0.1598
 64,Tučepi,Splitsko-dalmatinska,7,24191.83,5401.97,0.2107
 65,Kršan,Istarska,7,35114.6,7511.73,0.1284
 66,Šenkovec,Međimurska,7,32294.32,1846.15,0.2126
 67,Solin,Splitsko-dalmatinska,7,27125.2,2820.58,0.1921
 68,Lovran,Primorsko-goranska,7,34924.2,5202.51,0.2951
 69,Dugi Rat,Splitsko-dalmatinska,7,35914.35,2390.97,0.1925
-70,Moščenička Draga,Primorsko-goranska,7,32564.72,5892.33,0.2528
+70,MOŠĆENIČKA DRAGA,Primorsko-goranska,7,32564.72,5892.33,0.2528
 71,Kali,Zadarska,7,34920.58,3345.33,0.1488
 72,Dugopolje,Splitsko-dalmatinska,7,26089.48,5936.3,0.0937
 73,Postira,Splitsko-dalmatinska,7,28163.78,3982.79,0.195
@@ -131,7 +131,7 @@ razvijenost_rank,jls,zupanija,razvojna_skupina,dohodak,prihodi,obrazovanje
 130,Orebić,Dubrovačko-neretvanska,6,21518.57,2799.24,0.2527
 131,Marija Gorica,Zagrebačka,6,30901.8,2067.43,0.1493
 132,Delnice,Primorsko-goranska,6,33228.01,2771.1,0.2134
-133,Ivanić Grad,Zagrebačka,6,30494.63,2800.27,0.1577
+133,IVANIĆ-GRAD,Zagrebačka,6,30494.63,2800.27,0.1577
 134,Klana,Primorsko-goranska,6,33452.73,2610.63,0.1325
 135,Sukošan,Zadarska,6,23612.82,2523.03,0.1456
 136,Zlatar Bistrica,Krapinsko-zagorska,6,30760.03,1759.31,0.1658
