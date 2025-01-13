@@ -17,6 +17,9 @@ width = width > 1200 ? 1200 : width;
 let height = document.getElementById("map").clientHeight;
 let color = d3.scaleSequential(d3.interpolateRdBu).domain([-1, 1]);
 
+let redColor = d3.scaleSequential(d3.interpolateReds).domain([0, 1]);
+let blueColor = d3.scaleSequential(d3.interpolateBlues).domain([0, 1]);
+
 let projection = null;
 let path = null;
 let svg = null;
@@ -96,13 +99,16 @@ function wrangleData() {
   console.log(municipalities);
 
   let opcineSelection = renderGeography();
+  renderElection();
+  renderMilanovic();
+  renderPrimorac();
 
-  transformToCircles(opcineSelection)
-    .end()
-    .then(() => {
-      console.log("transfored to circles.");
-      createScatterPlot();
-    });
+  // transformToCircles(opcineSelection)
+  //   .end()
+  //   .then(() => {
+  //     console.log("transfored to circles.");
+  //     createScatterPlot();
+  //   });
 }
 
 function createScatterPlot() {
@@ -288,13 +294,65 @@ function transformToCircles(selection) {
   );
 }
 
-function renderGeography() {
-  svg = d3
-    .select("#map")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+function renderMilanovic() {
+  let opcineSelection = svg
+    .append("g")
+    .selectAll("path")
+    .data(municipalities)
+    .enter()
+    .append("path")
+    .attr("fill", (county) => {
+      if (
+        !county.properties.votes.primorac ||
+        !county.properties.votes.milanovic
+      ) {
+        return "lightgrey";
+      } else {
+        return redColor(
+          county.properties.votes.milanovic / county.properties.votes.count
+        );
+      }
+    })
+    .attr("stroke", "white")
+    .attr("d", path);
 
+  let factor = 0.44 * 0.7468;
+  // scale map to 44% of size and move it to the right
+  opcineSelection.attr("transform", `scale(${factor}) translate(1600, 400)`);
+
+  return opcineSelection;
+}
+
+function renderPrimorac() {
+  let opcineSelection = svg
+    .append("g")
+    .selectAll("path")
+    .data(municipalities)
+    .enter()
+    .append("path")
+    .attr("fill", (county) => {
+      if (
+        !county.properties.votes.primorac ||
+        !county.properties.votes.milanovic
+      ) {
+        return "lightgrey";
+      } else {
+        return blueColor(
+          county.properties.votes.primorac / county.properties.votes.count
+        );
+      }
+    })
+    .attr("stroke", "white")
+    .attr("d", path);
+
+  let factor = 0.44 * (1-0.7468);
+  // scale map to 44% of size and move it to the right
+  opcineSelection.attr("transform", `scale(${factor}) translate(1600, 400)`);
+
+  return opcineSelection;
+}
+
+function renderElection() {
   let opcineSelection = svg
     .append("g")
     .selectAll("path")
@@ -319,6 +377,29 @@ function renderGeography() {
         );
       }
     })
+    .attr("stroke", "white")
+    .attr("d", path);
+
+  // scale map to 44% of size and move it to the right
+  opcineSelection.attr("transform", "scale(0.44) translate(1600, 0)");
+
+  return opcineSelection;
+}
+
+function renderGeography() {
+  svg = d3
+    .select("#map")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  let opcineSelection = svg
+    .append("g")
+    .selectAll("path")
+    .data(municipalities)
+    .enter()
+    .append("path")
+    .attr("fill", "lightgrey")
     .attr("stroke", "white")
     .attr("d", path);
 
