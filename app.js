@@ -21,7 +21,17 @@ let projection = null;
 let path = null;
 let svg = null;
 
+let x,
+  y,
+  xAxis,
+  yAxis = null;
+
 let izbori2025 = null;
+
+// const DURATION = 3000;
+// const DELAY = 6;
+const DURATION = 3;
+const DELAY = 0;
 
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
@@ -33,12 +43,8 @@ promises.push(d3.json("combined.json"));
 Promise.all(promises).then(function (data) {
   croatia = data[0];
   populationData = data[1];
-  // let electionDataRaw = data[2];
   jlsData = data[2];
   izbori2025 = data[3];
-
-  // console.log(electionDataRaw);
-  // console.log(izbori2025);
 
   votingData = izbori2025.map((d) => {
     return {
@@ -110,20 +116,21 @@ function createScatterPlot() {
   //x scale: "Stupanj obrazovanja (VSS, 20-65) →", field "obrazovanje"
 
   const margin = { top: 70, right: 30, bottom: 30, left: 40 };
-  const y = d3
+  y = d3
     .scaleLinear()
     .domain(d3.extent(jlsData, (d) => d.dohodak))
     .rangeRound([height - margin.bottom, margin.top])
     .clamp(true);
 
-  const x = d3
+  x = d3
     .scaleLinear()
     .domain(d3.extent(jlsData, (d) => d.obrazovanje))
     .rangeRound([margin.left, width - margin.right]);
 
-  const yAxis = (g) =>
+  yAxis = (g) =>
     g
       .attr("transform", `translate(${margin.left},0)`)
+      .attr("class", "y-axis")
       .attr("font-size", 14)
       .call(
         d3.axisLeft(y).ticks(null, ",d").tickFormat(d3.format(".2s"))
@@ -145,9 +152,10 @@ function createScatterPlot() {
           )
       );
 
-  const xAxis = (g) =>
+  xAxis = (g) =>
     g
       .attr("transform", `translate(0,${height - margin.bottom})`)
+      .attr("class", "x-axis")
       .call(d3.axisBottom(x).ticks(width / 80))
       .call((g) => g.select(".domain").remove())
       .call((g) =>
@@ -170,10 +178,9 @@ function createScatterPlot() {
     .selectAll("path")
     .transition()
     .delay((d) => {
-      return d.rank * 3;
+      return d.rank * DELAY;
     })
-    .duration(3000)
-    // .duration(300)
+    .duration(DURATION)
     .attr("transform", function (d) {
       // Find this path’s bounding box
       const b = this.getBBox();
@@ -277,6 +284,36 @@ function createScatterPlot() {
         .on("mouseout", function () {
           d3.select("#tooltip").style("display", "none");
         });
+
+      // add zoom to .pathGroup', make sure to make a nice transition of axis
+
+      const pathGroup = svg.select(".pathGroup");
+
+      pathGroup.call(
+        d3.zoom().on("zoom", function (event) {
+          const { transform } = event;
+
+          // console.log(transform);
+          pathGroup.attr("transform", transform);
+
+          // decrease the stroke width as we zoom in
+          svg.selectAll("path").style("stroke-width", 1 / transform.k + "px");
+
+          svg
+            .select(".x-axis")
+            .transition()
+            .duration(200) // Adjust the duration as needed
+            .call(d3.axisBottom(transform.rescaleX(x)))
+            .call((g) => g.select(".domain").remove());
+
+          svg
+            .select(".y-axis")
+            .transition()
+            .duration(200)
+            .call(d3.axisLeft(transform.rescaleY(y)))
+            .call((g) => g.select(".domain").remove());
+        })
+      );
     });
 }
 
@@ -285,8 +322,8 @@ function transformToCircles(selection) {
   return (
     selection
       .transition()
-      .delay((d) => d.rank * 8)
-      .duration(3000)
+      .delay((d) => d.rank * DELAY)
+      .duration(DURATION)
       // .duration(300)
       .attrTween("d", function (d, i) {
         return flubber.toCircle(
@@ -309,8 +346,37 @@ function renderGeography() {
     .attr("width", width)
     .attr("height", height);
 
-  let opcineSelection = svg
-    .append("g")
+  // add a clip path to the svg element so that the circles are clipped
+  svg
+    .append("defs")
+    .append("clipPath")
+    .attr("id", "clip")
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height);
+
+  //apply the clip path to the svg element
+  svg.attr("clip-path", "url(#clip)");
+
+  let pathGroup = svg.append("g").attr("class", "pathGroup");
+
+  // add a rectangle to catch zoom events
+  pathGroup
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", "white")
+    .attr("pointer-events", "all");
+
+  // add a clip path with the same size as the rectangle
+  pathGroup
+    .append("clipPath")
+    .attr("id", "clip")
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height);
+
+  let opcineSelection = pathGroup
     .selectAll("path")
     .data(municipalities)
     .enter()
