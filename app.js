@@ -215,6 +215,20 @@ function createScatterPlot() {
         .attr("opacity", 1);
 
       svg
+        .append("text")
+        .attr("x", width - margin.right)
+        .attr("y", height - margin.bottom - 48)
+        .attr("fill", "currentColor")
+        .attr("font-size", 12)
+        .attr("font-family", "sans-serif")
+        .attr("text-anchor", "end")
+        .text("Autor: Velimir Gašparović")
+        .attr("opacity", 0)
+        .transition()
+        .duration(250)
+        .attr("opacity", 0.25);
+
+      svg
         .selectAll("path")
         .on("mouseover", function (event, d) {
           let tooltip = d3.select("#tooltip");
