@@ -1,557 +1,557 @@
 razvijenost_rank,jls,zupanija,razvojna_skupina,dohodak,prihodi,obrazovanje
-1,Kostrena,Primorsko-goranska,8,37199.28,9944.66,0.3917
-2,Medulin,Istarska,8,35982.54,8090.68,0.3525
-3,Grad Zagreb,Zagreb,8,44733.21,6232.49,0.3935
-4,Dubrovnik,Dubrovačko-neretvanska,8,38130.42,7394.93,0.3562
-5,Omišalj,Primorsko-goranska,8,38216.62,8607.77,0.2842
-6,MALINSKA-DUBAŠNICA,Primorsko-goranska,8,30940.95,8939.06,0.2688
-7,Funtana - Fontane,Istarska,8,30155.04,11309.64,0.2135
-8,Poreč - Parenzo,Istarska,8,37539.78,6820.12,0.2345
-9,Krk,Primorsko-goranska,8,35240.93,6449.64,0.2459
-10,Fažana - Fasana,Istarska,8,35891.96,6426.91,0.2559
-11,Punat,Primorsko-goranska,8,35977.94,7814.59,0.2484
-12,Rovinj - Rovigno,Istarska,8,39437.86,7110.73,0.2555
-13,Župa dubrovačka,Dubrovačko-neretvanska,8,34265.29,3899.6,0.2127
-14,Bol,Splitsko-dalmatinska,8,30710.92,8929.96,0.2139
-15,Viškovo,Primorsko-goranska,8,31583.54,2890.9,0.2305
-16,Umag - Umago,Istarska,8,35106.69,6720.07,0.2183
-17,Sutivan,Splitsko-dalmatinska,8,29971.57,10186.89,0.2715
-18,Sveta Nedelja,Zagrebačka,8,43803.04,4019.45,0.1932
-19,Baška,Primorsko-goranska,8,33297.77,11782.16,0.259
-20,Vrsar - Orsera,Istarska,8,36442.13,9112.41,0.1374
-21,Hvar,Splitsko-dalmatinska,8,30723.23,7318.32,0.2342
-22,Bale - Valle,Istarska,8,37077.9,6949.99,0.143
-23,Kolan,Zadarska,8,26849.92,10371.73,0.1656
-24,Opatija,Primorsko-goranska,8,39279.03,7626,0.3814
-25,Zaprešić,Zagrebačka,8,39016.65,3847.97,0.2508
-26,Konavle,Dubrovačko-neretvanska,8,38829.82,4735.37,0.2403
-27,Mali Lošinj,Primorsko-goranska,8,35107.1,6599.8,0.215
-28,Cres,Primorsko-goranska,8,36302.24,6610.31,0.2164
-29,Tar Vabriga - Torre-Abrega,Istarska,8,28106.2,7703.25,0.1307
-30,Kastav,Primorsko-goranska,8,35379.24,3178.51,0.307
-31,Varaždin,Varaždinska,8,37885.77,3797.74,0.3262
-32,Samobor,Zagrebačka,8,40939.42,3944.37,0.2338
-33,Biograd na Moru,Zadarska,8,29528.78,5230.53,0.2217
-34,Ližnjan - Lisignano,Istarska,8,29341.52,2826.71,0.208
-35,Vrbnik,Primorsko-goranska,8,34546.6,6092.17,0.2398
-36,Novalja,Ličko-senjska,8,25673.64,9062.54,0.174
-37,Makarska,Splitsko-dalmatinska,8,29114.61,4393.68,0.2375
-38,Vir,Zadarska,8,17291.7,15145.08,0.1495
-39,Pula - Pola,Istarska,8,36856.44,4012.64,0.2856
-40,Dobrinj,Primorsko-goranska,8,33224.85,5728.55,0.196
-41,Baška Voda,Splitsko-dalmatinska,8,24261.7,7243.78,0.2092
-42,Zadar,Zadarska,8,30281.84,3437.09,0.3085
-43,Supetar,Splitsko-dalmatinska,8,30407.27,4365.98,0.2305
-44,Buzet,Istarska,8,37550.91,3568.25,0.1944
-45,Crikvenica,Primorsko-goranska,8,30919.93,6278.97,0.2581
-46,Novigrad - Cittanova,Istarska,8,32624.1,7743.09,0.0821
-47,Koprivnica,Koprivničko-križevačka,8,34863.71,3165.08,0.2504
-48,Bakar,Primorsko-goranska,8,32019.04,5451.25,0.2003
-49,Podstrana,Splitsko-dalmatinska,8,22515.43,2586.88,0.2577
-50,Pazin,Istarska,8,36216.93,3317.91,0.229
-51,Kanfanar,Istarska,8,34371.23,3920.75,0.1648
-52,Brela,Splitsko-dalmatinska,8,28184.69,5731.21,0.2252
-53,Vodnjan - Dignano,Istarska,8,28785.03,5279.84,0.1444
-54,Matulji,Primorsko-goranska,8,35233.61,2959.84,0.2329
-55,Velika Gorica,Zagrebačka,8,35136.58,2778.76,0.206
-56,Čakovec,Međimurska,8,31664.07,2721.41,0.2525
-57,Rijeka,Primorsko-goranska,8,38186.85,4302.01,0.3277
-58,Stupnik,Zagrebačka,8,30720.22,4161.63,0.1588
-59,Marčana,Istarska,8,32194.12,3481.4,0.1789
-60,Labin,Istarska,8,37792.34,4428.56,0.2506
-61,Split,Splitsko-dalmatinska,8,33308.78,3402.41,0.3539
-62,Zabok,Krapinsko-zagorska,8,36203.1,3222.76,0.2063
-63,KAŠTELIR-LABINCI - CASTELLIERE-S. DOMENICA,Istarska,8,29060.59,3381.86,0.1598
-64,Tučepi,Splitsko-dalmatinska,7,24191.83,5401.97,0.2107
-65,Kršan,Istarska,7,35114.6,7511.73,0.1284
-66,Šenkovec,Međimurska,7,32294.32,1846.15,0.2126
-67,Solin,Splitsko-dalmatinska,7,27125.2,2820.58,0.1921
-68,Lovran,Primorsko-goranska,7,34924.2,5202.51,0.2951
-69,Dugi Rat,Splitsko-dalmatinska,7,35914.35,2390.97,0.1925
-70,MOŠĆENIČKA DRAGA,Primorsko-goranska,7,32564.72,5892.33,0.2528
-71,Kali,Zadarska,7,34920.58,3345.33,0.1488
-72,Dugopolje,Splitsko-dalmatinska,7,26089.48,5936.3,0.0937
-73,Postira,Splitsko-dalmatinska,7,28163.78,3982.79,0.195
-74,Lopar,Primorsko-goranska,7,23537.42,6231.33,0.1339
-75,Pićan,Istarska,7,33085.23,5013.54,0.1281
-76,Dugo Selo,Zagrebačka,7,28823.82,1951.01,0.1589
-77,Kraljevica,Primorsko-goranska,7,31462.59,2934.4,0.2503
-78,Sveti Lovreč,Istarska,7,34897.99,3236.56,0.1058
-79,Stubičke Toplice,Krapinsko-zagorska,7,33901.26,2732.23,0.2296
-80,Nin,Zadarska,7,22932.07,6182.43,0.151
-81,Tinjan,Istarska,7,33211.09,2781.01,0.1542
-82,Novi Vinodolski,Primorsko-goranska,7,29746.53,5017.22,0.2137
-83,Rab,Primorsko-goranska,7,29956.7,4023.2,0.1752
-84,Vis,Splitsko-dalmatinska,7,29537.02,4871.18,0.2383
-85,Čavle,Primorsko-goranska,7,31371.98,2591.81,0.1789
-86,Osijek,Osječko-baranjska,7,33322.88,2493.59,0.2839
-87,Žminj,Istarska,7,34390.41,2137.91,0.148
-88,Šibenik,Šibensko-kninska,7,32319.69,2782.69,0.2491
-89,Brdovec,Zagrebačka,7,32887.18,2155.91,0.1453
-90,Murter - Kornati,Šibensko-kninska,7,23111.11,4797.14,0.2073
-91,Korčula,Dubrovačko-neretvanska,7,27624.86,3394.71,0.2625
-92,Sveti Petar u Šumi,Istarska,7,31915.29,2057.34,0.134
-93,Okrug,Splitsko-dalmatinska,7,21872.24,4432.84,0.223
-94,Višnjan - Visignano,Istarska,7,31773.77,2687.39,0.1256
-95,Vodice,Šibensko-kninska,7,22437.88,4478.65,0.1991
-96,Milna,Splitsko-dalmatinska,7,28665.27,4981.55,0.1911
-97,Trogir,Splitsko-dalmatinska,7,27662.08,3917.17,0.2098
-98,Primošten,Šibensko-kninska,7,27078.39,6898.18,0.1678
-99,Karlovac,Karlovačka,7,34180.05,2656.02,0.262
-100,Vižinada - Visinada,Istarska,7,29606.54,2827,0.1321
-101,Buje - Buie,Istarska,7,29167.29,3017.99,0.183
-102,Ludbreg,Varaždinska,7,29422.09,2018.12,0.1698
-103,Rogoznica,Šibensko-kninska,7,25379.33,8062.53,0.1854
-104,Tkon,Zadarska,7,25087.14,3944.78,0.1342
-105,Podgora,Splitsko-dalmatinska,7,25276.09,5242.03,0.2451
-106,Privlaka,Zadarska,7,23557.15,4093.07,0.1533
-107,Lastovo,Dubrovačko-neretvanska,7,29804.41,2865.58,0.2403
-108,Pušća,Zagrebačka,7,33549.61,2217.11,0.1404
-109,Sveta Nedelja,Istarska,7,33203.18,3276.98,0.1527
-110,Jelsa,Splitsko-dalmatinska,7,25772.37,3641.21,0.2469
-111,Gračišće,Istarska,7,30502.74,2153.23,0.133
-112,Stari Grad,Splitsko-dalmatinska,7,26961.11,3868.55,0.1924
-113,Brtonigla - Verteneglio,Istarska,7,27103.9,5110.42,0.1035
-114,Tisno,Šibensko-kninska,7,24465.17,4925.12,0.1817
-115,Jastrebarsko,Zagrebačka,7,32188.75,2570.85,0.1612
-116,Krapina,Krapinsko-zagorska,7,33085.78,2017.77,0.1948
-117,Jelenje,Primorsko-goranska,7,30112.41,1915.08,0.1343
-118,Kukljica,Zadarska,7,31036.82,5085.66,0.1493
-119,Oroslavje,Krapinsko-zagorska,7,32613.71,1944.99,0.1722
-120,Jasenice,Zadarska,7,29542.34,3546.21,0.115
-121,Kaštela,Splitsko-dalmatinska,7,24423.97,2320.26,0.1849
-122,Pag,Zadarska,7,26391.13,4883.64,0.2104
-123,Raša,Istarska,7,35069.52,4046.28,0.1421
-124,Bistra,Zagrebačka,7,30918.61,2112.27,0.1222
-125,Svetvinčenat,Istarska,7,32240.37,2644.97,0.1209
-126,Barban,Istarska,7,35859.42,2492,0.1687
-127,Pašman,Zadarska,6,26039.67,3738.68,0.1643
-128,Lupoglav,Istarska,6,33256.88,2450.49,0.1268
-129,Fužine,Primorsko-goranska,6,38957.15,5851.8,0.1539
-130,Orebić,Dubrovačko-neretvanska,6,21518.57,2799.24,0.2527
-131,Marija Gorica,Zagrebačka,6,30901.8,2067.43,0.1493
-132,Delnice,Primorsko-goranska,6,33228.01,2771.1,0.2134
-133,IVANIĆ-GRAD,Zagrebačka,6,30494.63,2800.27,0.1577
-134,Klana,Primorsko-goranska,6,33452.73,2610.63,0.1325
-135,Sukošan,Zadarska,6,23612.82,2523.03,0.1456
-136,Zlatar Bistrica,Krapinsko-zagorska,6,30760.03,1759.31,0.1658
-137,Trpanj,Dubrovačko-neretvanska,6,22786.87,3026.78,0.3588
-138,Gornji Kneginec,Varaždinska,6,30824.93,2161.54,0.1257
-139,Blato,Dubrovačko-neretvanska,6,27846.81,2462.77,0.1772
-140,Gospić,Ličko-senjska,6,32140.96,2290.83,0.2139
-141,Starigrad,Zadarska,6,27160.58,4805.48,0.1067
-142,Omiš,Splitsko-dalmatinska,6,26445.03,2966.54,0.1801
-143,Tribunj,Šibensko-kninska,6,22477.81,4889.73,0.1581
-144,Vinodolska općina,Primorsko-goranska,6,30219.48,3761.7,0.1608
-145,Klinča Sela,Zagrebačka,6,29261.37,1611.41,0.1207
-146,Vinkovci,Vukovarsko-srijemska,6,26893.74,1777.08,0.2143
-147,Bilice,Šibensko-kninska,6,23912.72,2018.3,0.1316
-148,Mljet,Dubrovačko-neretvanska,6,28510.64,3326.74,0.1833
-149,Hum na Sutli,Krapinsko-zagorska,6,34238.76,2521.49,0.1066
-150,Motovun - Montona,Istarska,6,23940.65,3418.46,0.1365
-151,Lumbarda,Dubrovačko-neretvanska,6,21754.39,2514.04,0.2108
-152,Klis,Splitsko-dalmatinska,6,25790.88,2171.44,0.1374
-153,Krapinske Toplice,Krapinsko-zagorska,6,32365.09,1855.87,0.1624
-154,Sveti Filip i Jakov,Zadarska,6,23517.02,3025.35,0.1284
-155,Strahoninec,Međimurska,6,29320.48,1494.74,0.1342
-156,Povljana,Zadarska,6,22215.76,6542.35,0.2075
-157,Dubrovačko primorje,Dubrovačko-neretvanska,6,33324.38,3315.35,0.1712
-158,Karojba,Istarska,6,30127.13,1429.12,0.1007
-159,Grožnjan - Grisignana,Istarska,6,24466.98,3980.9,0.1444
-160,Donja Stubica,Krapinsko-zagorska,6,26616.04,1477.19,0.1343
-161,Požega,Požeško-slavonska,6,27519.01,1695.97,0.2208
-162,Bjelovar,Bjelovarsko-bilogorska,6,28846.85,2044.87,0.1928
-163,Ston,Dubrovačko-neretvanska,6,25524.3,3222.39,0.1565
-164,Pakoštane,Zadarska,6,20713.29,2945.67,0.1125
-165,Veliki Bukovec,Varaždinska,6,39271.52,1281.52,0.0804
-166,Sisak,Sisačko-moslavačka,6,33082.6,2993.1,0.2149
-167,Ploče,Dubrovačko-neretvanska,6,29193.2,1803.3,0.2239
-168,Varaždinske Toplice,Varaždinska,6,29389.6,1483.07,0.1323
-169,Križevci,Koprivničko-križevačka,6,25605.68,1625.79,0.1755
-170,Sali,Zadarska,6,32327.28,3964.08,0.1912
-171,Šolta,Splitsko-dalmatinska,6,29419.17,5496.23,0.2734
-172,Seget,Splitsko-dalmatinska,6,25452.58,2959.09,0.1693
-173,Pirovac,Šibensko-kninska,6,21806.76,3995.95,0.1569
-174,Kutina,Sisačko-moslavačka,6,30289.92,2457.55,0.1724
-175,Virovitica,Virovitičko-podravska,6,27885.64,2011.39,0.185
-176,Konjščina,Krapinsko-zagorska,6,30181.62,1374.15,0.1441
-177,Ivanec,Varaždinska,6,28355.01,1486.77,0.1425
-178,Trnovec Bartolovečki,Varaždinska,6,29135.96,1565.21,0.0994
-179,Slavonski Brod,Brodsko-posavska,6,26482.04,1671.55,0.2111
-180,Vrbovec,Zagrebačka,6,26289.64,1490.77,0.1402
-181,Gradac,Splitsko-dalmatinska,6,19440.68,3173.12,0.2667
-182,Prelog,Međimurska,6,26090.43,1781.74,0.1241
-183,Bibinje,Zadarska,6,21100.3,2337.31,0.1171
-184,Pučišća,Splitsko-dalmatinska,6,26396.19,2592.33,0.1223
-185,Sveti Ivan Zelina,Zagrebačka,6,27700.02,1772.01,0.125
-186,Nerežišća,Splitsko-dalmatinska,6,26623.16,3285.75,0.1105
-187,Luka,Zagrebačka,6,27558.52,3112.98,0.0752
-188,Sveti Ilija,Varaždinska,6,27433.91,1263.03,0.1101
-189,Duga Resa,Karlovačka,6,32490.81,1653.2,0.175
-190,Nedelišće,Međimurska,5,25502.38,1413.69,0.1165
-191,Novi Marof,Varaždinska,5,27257.96,1151.96,0.1195
-192,Daruvar,Bjelovarsko-bilogorska,5,28815.62,1698.84,0.2123
-193,Preko,Zadarska,5,28912.14,3552.74,0.169
-194,Ogulin,Karlovačka,5,29447.41,1807.61,0.1726
-195,Jakovlje,Zagrebačka,5,29742.5,1790.6,0.0863
-196,Karlobag,Ličko-senjska,5,25519.15,7075.18,0.1569
-197,Đurđevac,Koprivničko-križevačka,5,24422.9,2805.91,0.1657
-198,Vrsi,Zadarska,5,20224.86,4444.4,0.1151
-199,Cerovlje,Istarska,5,28268.24,1666.05,0.1061
-200,Marija Bistrica,Krapinsko-zagorska,5,29382.75,2070.04,0.1078
-201,Veliko Trgovišće,Krapinsko-zagorska,5,28076.65,1620.69,0.1245
-202,Ljubešćica,Varaždinska,5,26141.11,1848.9,0.0903
-203,Zlatar,Krapinsko-zagorska,5,26135.61,1464.62,0.1192
-204,Novigrad,Zadarska,5,24664.52,1937.47,0.1893
-205,Vela Luka,Dubrovačko-neretvanska,5,24918.36,2160.28,0.1823
-206,Bedekovčina,Krapinsko-zagorska,5,26698.03,1284.51,0.1185
-207,Sračinec,Varaždinska,5,25790.96,1216.13,0.0764
-208,Senj,Ličko-senjska,5,30514.79,3192.04,0.1841
-209,Plitvička jezera,Ličko-senjska,5,31213.72,2439.97,0.1441
-210,Komiža,Splitsko-dalmatinska,5,28120,2976.69,0.1642
-211,Sveti Križ Začretje,Krapinsko-zagorska,5,27399.16,1461.39,0.1037
-212,Pisarovina,Zagrebačka,5,26401.29,2448.03,0.0986
-213,Sinj,Splitsko-dalmatinska,5,24794.2,1246,0.1666
-214,Radoboj,Krapinsko-zagorska,5,28673.82,1430.43,0.1034
-215,Orahovica,Virovitičko-podravska,5,26988.31,1973.79,0.1867
-216,Kravarsko,Zagrebačka,5,26816.03,1461.19,0.0901
-217,Posedarje,Zadarska,5,23396.4,1737.03,0.0963
-218,Križ,Zagrebačka,5,28116.82,2306.08,0.1181
-219,Sveti Juraj na Bregu,Međimurska,5,22753.13,1122.89,0.0951
-220,Selca,Splitsko-dalmatinska,5,24838.65,2835.92,0.1585
-221,Zemunik Donji,Zadarska,5,28440.28,2226.07,0.0941
-222,Oprtalj - Portole,Istarska,5,24880.41,2824.39,0.1458
-223,Kalinovac,Koprivničko-križevačka,5,22295.14,5347.9,0.1173
-224,Beretinec,Varaždinska,5,25949.24,1130.82,0.0764
-225,Lokve,Primorsko-goranska,5,30509.15,3203.25,0.1498
-226,Metković,Dubrovačko-neretvanska,5,21136.99,1218.56,0.1984
-227,Klanjec,Krapinsko-zagorska,5,29863.15,1547.33,0.1092
-228,Poličnik,Zadarska,5,22856.28,1623.85,0.0678
-229,Zadvarje,Splitsko-dalmatinska,5,27861.89,5183.4,0.2089
-230,Ravna Gora,Primorsko-goranska,5,33964,2629.73,0.1271
-231,Kloštar Ivanić,Zagrebačka,5,24323.54,1791.25,0.098
-232,Smokvica,Dubrovačko-neretvanska,5,22223.41,1889.63,0.1962
-233,Ražanac,Zadarska,5,21717.19,2073.47,0.1266
-234,Našice,Osječko-baranjska,5,26078.2,1609.64,0.1788
-235,Sveta Marija,Međimurska,5,26576.71,1342.72,0.0915
-236,Mursko Središće,Međimurska,5,21298.75,1389.76,0.1219
-237,Marina,Splitsko-dalmatinska,5,23667.24,3173.07,0.1061
-238,Pregrada,Krapinsko-zagorska,5,27778.42,1309.32,0.0909
-239,Vidovec,Varaždinska,5,24148.8,988.25,0.0869
-240,Rugvica,Zagrebačka,5,22703.1,1688.01,0.0741
-241,Drniš,Šibensko-kninska,5,30149.08,1522.92,0.1695
-242,Antunovac,Osječko-baranjska,5,25823.7,1238.66,0.0873
-243,Opuzen,Dubrovačko-neretvanska,5,20878.44,1912.88,0.208
-244,Donji Kraljevec,Međimurska,5,24383.53,1311.05,0.121
-245,Novi Golubovec,Krapinsko-zagorska,5,24197.59,1597.87,0.0722
-246,Čabar,Primorsko-goranska,5,30202.47,2000.53,0.1625
-247,Đurmanec,Krapinsko-zagorska,5,27738.17,1178.18,0.0877
-248,Škabrnja,Zadarska,5,23974.66,947.7,0.0765
-249,Ozalj,Karlovačka,5,27460.63,2164.07,0.1097
-250,Jesenje,Krapinsko-zagorska,5,25078.6,1775.14,0.0904
-251,Pribislavec,Međimurska,5,20937.74,1078.45,0.0892
-252,Rakovica,Karlovačka,5,30027.44,2442.39,0.0679
-253,Draganić,Karlovačka,4,25893.6,1571.51,0.1309
-254,Tuhelj,Krapinsko-zagorska,4,27294.24,1832.53,0.0879
-255,Bilje,Osječko-baranjska,4,25471.1,1487.7,0.1382
-256,Galovac,Zadarska,4,23842.61,941.95,0.0575
-257,Polača,Zadarska,4,20284.8,1990.77,0.088
-258,Jalžabet,Varaždinska,4,20940.49,1333.68,0.0743
-259,Popovača,Sisačko-moslavačka,4,24675.09,2404.35,0.0989
-260,Županja,Vukovarsko-srijemska,4,24459.28,1872.68,0.1865
-261,Petrijanec,Varaždinska,4,21103.9,1168.67,0.0695
-262,Sveti Martin na Muri,Međimurska,4,20461.1,1421.47,0.0828
-263,Đakovo,Osječko-baranjska,4,22348.91,1252.1,0.1541
-264,Valpovo,Osječko-baranjska,4,25568.75,1387.24,0.1564
-265,Brckovljani,Zagrebačka,4,22541.73,1758.71,0.0734
-266,Bedenica,Zagrebačka,4,25490.11,1382.27,0.0621
-267,Lipovljani,Sisačko-moslavačka,4,26221.51,2132.87,0.0898
-268,Vinica,Varaždinska,4,24227.33,1274.8,0.0902
-269,Dubravica,Zagrebačka,4,27853.03,1604.37,0.0991
-270,Lekenik,Sisačko-moslavačka,4,27673.59,1684.73,0.084
-271,Breznica,Varaždinska,4,22224.57,1269.05,0.0606
-272,Otočac,Ličko-senjska,4,25881.66,1757.77,0.144
-273,Vukovar,Vukovarsko-srijemska,4,29068.72,1535.17,0.201
-274,Maruševec,Varaždinska,4,25345.23,878.32,0.0906
-275,Kotoriba,Međimurska,4,22129.21,1296.71,0.0945
-276,Nova Gradiška,Brodsko-posavska,4,25030.4,1785.58,0.1781
-277,Lepoglava,Varaždinska,4,23045.31,1069.14,0.1154
-278,Klenovnik,Varaždinska,4,24961.73,1018.11,0.0855
-279,Josipdol,Karlovačka,4,26336.18,1515.98,0.1101
-280,Gornji Mihaljevec,Međimurska,4,22772.99,1289.54,0.0647
-281,Donji Miholjac,Osječko-baranjska,4,24094.43,1353.4,0.1476
-282,Hrašćina,Krapinsko-zagorska,4,25452.06,1246.61,0.0852
-283,Gornja Stubica,Krapinsko-zagorska,4,24529.08,1282.74,0.0825
-284,Kumrovec,Krapinsko-zagorska,4,27645.34,1348.04,0.0996
-285,Čepin,Osječko-baranjska,4,24915.51,1351.85,0.1106
-286,Benkovac,Zadarska,4,20837.33,1143.38,0.0818
-287,Goričan,Međimurska,4,22570.62,1188.5,0.0765
-288,Dicmo,Splitsko-dalmatinska,4,21572.81,1092.7,0.0664
-289,Mrkopalj,Primorsko-goranska,4,33059.05,3062.99,0.1356
-290,Koprivnički Ivanec,Koprivničko-križevačka,4,22807.28,1775.09,0.084
-291,Bukovlje,Brodsko-posavska,4,19088.83,954.74,0.0859
-292,Skrad,Primorsko-goranska,4,37335.97,3066.03,0.1748
-293,Dekanovec,Međimurska,4,19446.58,1258.6,0.0774
-294,Mače,Krapinsko-zagorska,4,22884.37,930.91,0.0691
-295,Vrgorac,Splitsko-dalmatinska,4,25160.04,1255.16,0.1352
-296,Petrinja,Sisačko-moslavačka,4,26078.77,1560.47,0.1555
-297,Lobor,Krapinsko-zagorska,4,20203.92,950.7,0.0702
-298,Breznički Hum,Varaždinska,4,22247.75,1321.48,0.0873
-299,Imotski,Splitsko-dalmatinska,4,19794.31,1383.79,0.2074
-300,Vrbovsko,Primorsko-goranska,4,32123.46,2133.33,0.1442
-301,Klakar,Brodsko-posavska,4,21523.36,953.11,0.0829
-302,Čazma,Bjelovarsko-bilogorska,4,24198.97,1660.74,0.1076
-303,Kamanje,Karlovačka,4,23332.39,1812.04,0.1152
-304,Mihovljan,Krapinsko-zagorska,4,24245.31,1295.55,0.0655
-305,Pakrac,Požeško-slavonska,4,27198.11,1550.87,0.1408
-306,Novigrad Podravski,Koprivničko-križevačka,4,20275.07,2228.53,0.0992
-307,Obrovac,Zadarska,4,20609.67,3384.88,0.1199
-308,Molve,Koprivničko-križevačka,4,17284.82,4531.38,0.0779
-309,Stankovci,Zadarska,4,21536.71,817.69,0.0698
-310,Vratišinec,Međimurska,4,20797.81,946.88,0.0625
-311,Petrovsko,Krapinsko-zagorska,4,25107.82,1249.47,0.0759
-312,Gradec,Zagrebačka,4,20733.19,1053.52,0.0722
-313,Belica,Međimurska,4,21243.12,1245.48,0.0701
-314,Budinščina,Krapinsko-zagorska,4,21772.91,1000.21,0.0696
-315,Ernestinovo,Osječko-baranjska,4,25435.78,1433.68,0.0808
-316,Barilović,Karlovačka,4,25880.06,1469.94,0.0997
-317,Đelekovec,Koprivničko-križevačka,4,24512.59,1259.04,0.1222
-318,Novska,Sisačko-moslavačka,4,24608.77,1757.53,0.1019
-319,Kraljevec na Sutli,Krapinsko-zagorska,4,24930.3,1135.58,0.064
-320,Brod Moravice,Primorsko-goranska,4,30059.01,2134.32,0.1857
-321,Jakšić,Požeško-slavonska,4,19624.79,822.89,0.1215
-322,Drnje,Koprivničko-križevačka,4,23399.62,1166.37,0.0946
-323,Velika Ludina,Sisačko-moslavačka,4,21884.81,1815.47,0.0817
-324,Belišće,Osječko-baranjska,4,23888.38,1849.77,0.1329
-325,Bosiljevo,Karlovačka,4,24248.71,3522.58,0.1006
-326,Slatina,Virovitičko-podravska,4,22376.63,1515.6,0.1443
-327,Nuštar,Vukovarsko-srijemska,4,21820.23,787.06,0.1084
-328,Tovarnik,Vukovarsko-srijemska,4,24116.3,2620.84,0.0949
-329,Donja Dubrava,Međimurska,3,23582.71,1226.66,0.1018
-330,Mali Bukovec,Varaždinska,3,21429.44,950.56,0.0703
-331,Peteranec,Koprivničko-križevačka,3,20295.96,1335.94,0.0786
-332,Petrijevci,Osječko-baranjska,3,22569.51,1476.18,0.1008
-333,Donji Vidovec,Međimurska,3,21291.55,1153.04,0.0889
-334,Orle,Zagrebačka,3,22136.12,1158.08,0.0596
-335,Selnica,Međimurska,3,17673.36,974.98,0.0689
-336,Lipik,Požeško-slavonska,3,24294.04,1734.64,0.1094
-337,Andrijaševci,Vukovarsko-srijemska,3,20543.3,1102.24,0.0723
-338,Žakanje,Karlovačka,3,18548.94,1469.77,0.1032
-339,Lasinja,Karlovačka,3,25509.63,1867.16,0.0975
-340,Sveti Đurđ,Varaždinska,3,20924.61,1055.16,0.0553
-341,Cestica,Varaždinska,3,15534.1,1209.43,0.0683
-342,Virje,Koprivničko-križevačka,3,19344.02,2029.44,0.0977
-343,Sibinj,Brodsko-posavska,3,20697.56,872.93,0.0838
-344,Gornja Vrba,Brodsko-posavska,3,17754.53,1273.63,0.0664
-345,Jarmina,Vukovarsko-srijemska,3,22062.97,926.45,0.0573
-346,Primorski Dolac,Splitsko-dalmatinska,3,24953,1897.21,0.0452
-347,Janjina,Dubrovačko-neretvanska,3,20024,5600.64,0.331
-348,Koprivnički Bregi,Koprivničko-križevačka,3,22067.05,1034.33,0.0769
-349,Krašić,Zagrebačka,3,24117.72,1070.05,0.0843
-350,Mala Subotica,Međimurska,3,19492.99,981.93,0.0814
-351,Oriovac,Brodsko-posavska,3,20877.58,995.09,0.089
-352,Visoko,Varaždinska,3,17983.51,708.73,0.065
-353,Podturen,Međimurska,3,17826.45,971.84,0.0559
-354,Garešnica,Bjelovarsko-bilogorska,3,22119.15,1257.11,0.1093
-355,Štrigova,Međimurska,3,17745.71,1177.96,0.0751
-356,Beli Manastir,Osječko-baranjska,3,25612.06,1586.95,0.1724
-357,Vođinci,Vukovarsko-srijemska,3,18775.99,879.34,0.0805
-358,Domašinec,Međimurska,3,16684.81,1124.45,0.0658
-359,Podravske Sesvete,Koprivničko-križevačka,3,16409.28,2946.98,0.0524
-360,Brodski Stupnik,Brodsko-posavska,3,21183.59,952.71,0.075
-361,Velika,Požeško-slavonska,3,18627.61,1091.5,0.0966
-362,Oprisavci,Brodsko-posavska,3,20539.5,896.95,0.0693
-363,Hrvace,Splitsko-dalmatinska,3,27106.03,2191.92,0.0763
-364,Pokupsko,Zagrebačka,3,21712.17,1396.72,0.053
-365,Kutjevo,Požeško-slavonska,3,19869.57,999.82,0.0964
-366,Hercegovac,Bjelovarsko-bilogorska,3,23457.7,1409.51,0.1019
-367,Otok,Splitsko-dalmatinska,3,18965.58,1563.43,0.0712
-368,Knin,Šibensko-kninska,3,23137.23,1361.47,0.1458
-369,Bizovac,Osječko-baranjska,3,22340.75,1376.09,0.0927
-370,Ivankovo,Vukovarsko-srijemska,3,19598.63,907.06,0.0725
-371,Zagorska Sela,Krapinsko-zagorska,3,21017.54,1336.6,0.0747
-372,Čeminac,Osječko-baranjska,3,23609.91,1979.94,0.0577
-373,Podcrkavlje,Brodsko-posavska,3,18137.94,844.78,0.0778
-374,Zmijavci,Splitsko-dalmatinska,3,19104.06,1020.93,0.1818
-375,Kula Norinska,Dubrovačko-neretvanska,3,21317.28,889.74,0.1116
-376,Kalnik,Koprivničko-križevačka,3,16956,1186.1,0.0752
-377,Lovinac,Ličko-senjska,3,25122.5,7470.51,0.1156
-378,Promina,Šibensko-kninska,3,24426.74,2180.48,0.1562
-379,Slivno,Dubrovačko-neretvanska,3,14785.86,1862.46,0.1991
-380,Muć,Splitsko-dalmatinska,3,22996.64,1558.73,0.0414
-381,Donji Andrijevci,Brodsko-posavska,3,19588.03,969.14,0.0735
-382,Netretić,Karlovačka,3,25765.04,1185.61,0.0725
-383,Orehovica,Međimurska,3,13906.01,1033.99,0.0521
-384,Garčin,Brodsko-posavska,3,19728.59,908.06,0.0694
-385,Hlebine,Koprivničko-križevačka,3,18271.78,1493.35,0.0743
-386,Trilj,Splitsko-dalmatinska,3,19229.13,1409.31,0.079
-387,Rakovec,Zagrebačka,3,17147.41,791.13,0.0774
-388,Vuka,Osječko-baranjska,3,23023.6,1273.46,0.0381
-389,Dubrava,Zagrebačka,3,18872.16,984.43,0.0793
-390,Lanišće,Istarska,3,30744.23,2179.94,0.1263
-391,Sveti Ivan Žabno,Koprivničko-križevačka,3,16668.72,847.81,0.0665
-392,Ilok,Vukovarsko-srijemska,3,21561.44,898.32,0.1144
-393,Cerna,Vukovarsko-srijemska,3,19321.48,1071.84,0.0635
-394,Pleternica,Požeško-slavonska,3,18630.19,831.99,0.091
-395,Rasinja,Koprivničko-križevačka,3,18768.38,1054.04,0.0735
-396,Pitomača,Virovitičko-podravska,3,17501.22,1410.2,0.0718
-397,Vrlika,Splitsko-dalmatinska,3,24393.95,3128.49,0.0783
-398,Sućuraj,Splitsko-dalmatinska,3,23119.3,3334.17,0.2231
-399,Vrpolje,Brodsko-posavska,3,17306.11,965.28,0.0671
-400,Lovas,Vukovarsko-srijemska,3,24686.88,2204.49,0.0799
-401,Feričanci,Osječko-baranjska,3,22707.92,1351.57,0.0941
-402,Stari Mikanovci,Vukovarsko-srijemska,3,19342.84,991.99,0.0771
-403,Tordinci,Vukovarsko-srijemska,3,21299.89,1084.97,0.0681
-404,Bednja,Varaždinska,3,19895.83,992.57,0.0815
-405,Gola,Koprivničko-križevačka,2,15777.92,3268.48,0.0341
-406,Martijanec,Varaždinska,2,24081.63,1199.47,0.0612
-407,Strizivojna,Osječko-baranjska,2,17135.68,641.15,0.0604
-408,Legrad,Koprivničko-križevačka,2,21665.54,1864.84,0.0711
-409,Punitovci,Osječko-baranjska,2,18371.83,1398.84,0.0536
-410,Grubišno Polje,Bjelovarsko-bilogorska,2,21440.2,1415.37,0.1202
-411,Velika Kopanica,Brodsko-posavska,2,16582.74,1002.29,0.0651
-412,Generalski Stol,Karlovačka,2,27029.52,1398.39,0.0705
-413,Slunj,Karlovačka,2,28386.37,1489.71,0.1108
-414,Sirač,Bjelovarsko-bilogorska,2,21573.53,1490.7,0.0728
-415,Skradin,Šibensko-kninska,2,24418.59,1588.12,0.0681
-416,Brestovac,Požeško-slavonska,2,19142.58,823.19,0.0802
-417,Sikirevci,Brodsko-posavska,2,15672.71,721.24,0.0588
-418,Podbablje,Splitsko-dalmatinska,2,18291.11,740.51,0.1503
-419,Darda,Osječko-baranjska,2,20451.55,1161.71,0.0947
-420,Desinić,Krapinsko-zagorska,2,21035.06,1013.18,0.0622
-421,Bebrina,Brodsko-posavska,2,16546.01,705.99,0.0486
-422,Topusko,Sisačko-moslavačka,2,23426.16,1879.56,0.1311
-423,Magadenovac,Osječko-baranjska,2,18599.31,3429.98,0.055
-424,Otok,Vukovarsko-srijemska,2,19176.13,1645.02,0.0657
-425,Kaptol,Požeško-slavonska,2,16738.15,705.95,0.0719
-426,Gundinci,Brodsko-posavska,2,14815.69,762.85,0.0519
-427,Satnica Đakovačka,Osječko-baranjska,2,16906.45,929.46,0.0597
-428,Nova Kapela,Brodsko-posavska,2,21035.16,1083.56,0.0806
-429,Runovići,Splitsko-dalmatinska,2,18505.29,700.14,0.1652
-430,Gornja Rijeka,Koprivničko-križevačka,2,15001.72,727.42,0.0355
-431,Čačinci,Virovitičko-podravska,2,21915.94,1142.78,0.0917
-432,Preseka,Zagrebačka,2,18347.05,782.53,0.0428
-433,Ribnik,Karlovačka,2,21343.19,1811.83,0.1505
-434,Semeljci,Osječko-baranjska,2,18631.69,1078.85,0.0606
-435,Perušić,Ličko-senjska,2,26514.06,3398.99,0.1167
-436,Kloštar Podravski,Koprivničko-križevačka,2,14091.8,1220.84,0.0706
-437,Veliko Trojstvo,Bjelovarsko-bilogorska,2,19520.36,1793.36,0.0638
-438,Ferdinandovac,Koprivničko-križevačka,2,17021.02,1442.72,0.0848
-439,Stari Jankovci,Vukovarsko-srijemska,2,19377.14,1509.82,0.0797
-440,Sveti Petar Orehovec,Koprivničko-križevačka,2,13074.72,565.85,0.0496
-441,Marijanci,Osječko-baranjska,2,18970.57,1222.82,0.0513
-442,Zdenci,Virovitičko-podravska,2,20177.96,1885.86,0.0896
-443,Gorjani,Osječko-baranjska,2,17973.29,1503.12,0.0548
-444,Martinska Ves,Sisačko-moslavačka,2,20709.31,1175.73,0.0664
-445,Viškovci,Osječko-baranjska,2,18800.65,938.39,0.0425
-446,Farkaševac,Zagrebačka,2,14904.74,745.56,0.0364
-447,Šestanovac,Splitsko-dalmatinska,2,20367.22,933.2,0.0936
-448,Hrvatska Kostajnica,Sisačko-moslavačka,2,24382.44,1372.87,0.1323
-449,Vladislavci,Osječko-baranjska,2,19342.06,1329.22,0.0445
-450,Gradište,Vukovarsko-srijemska,2,17428.31,826,0.0803
-451,Sokolovac,Koprivničko-križevačka,2,17566.12,845.02,0.0485
-452,Velika Trnovitica,Bjelovarsko-bilogorska,2,16406.13,1473.83,0.0734
-453,Prgomet,Splitsko-dalmatinska,2,27258.66,1967.1,0.1008
-454,Nijemci,Vukovarsko-srijemska,2,19878.83,2168.05,0.0525
-455,Cernik,Brodsko-posavska,2,20619.28,873.45,0.0819
-456,Pojezerje,Dubrovačko-neretvanska,2,16343.16,696,0.0675
-457,Novo Virje,Koprivničko-križevačka,2,13857.31,1726.77,0.0471
-458,Rešetari,Brodsko-posavska,2,18626.05,815.97,0.0717
-459,Tounj,Karlovačka,2,21753.34,1565.71,0.0253
-460,Koška,Osječko-baranjska,2,20194.62,1270.01,0.0601
-461,Erdut,Osječko-baranjska,2,20572.55,1412.79,0.0873
-462,Lišane Ostrovičke,Zadarska,2,21053.28,912.92,0.0311
-463,Rovišće,Bjelovarsko-bilogorska,2,16021.69,797.37,0.0662
-464,Ružić,Šibensko-kninska,2,23233.13,901.45,0.046
-465,Kneževi Vinogradi,Osječko-baranjska,2,21026.08,1516.61,0.0911
-466,Bošnjaci,Vukovarsko-srijemska,2,17383.76,1034.84,0.0989
-467,Dragalić,Brodsko-posavska,2,18811.88,1253.47,0.0734
-468,Veliki Grđevac,Bjelovarsko-bilogorska,2,19378.46,1345.82,0.0728
-469,Šandrovac,Bjelovarsko-bilogorska,2,16921.71,2420.86,0.0299
-470,Slavonski Šamac,Brodsko-posavska,2,13564.49,681.92,0.0635
-471,Đurđenovac,Osječko-baranjska,2,19714.95,953.97,0.0861
-472,Bogdanovci,Vukovarsko-srijemska,2,19920.2,1010.53,0.0698
-473,Končanica,Bjelovarsko-bilogorska,2,18777.72,912.65,0.0596
-474,Davor,Brodsko-posavska,2,16042.65,741.18,0.0488
-475,Ivanska,Bjelovarsko-bilogorska,2,18687.18,1043.99,0.0647
-476,Štefanje,Bjelovarsko-bilogorska,2,17741.8,1026.99,0.062
-477,Vrbanja,Vukovarsko-srijemska,2,18151.86,1316.77,0.0529
-478,Borovo,Vukovarsko-srijemska,2,16314.69,508.48,0.0908
-479,Privlaka,Vukovarsko-srijemska,2,18496.03,1259.3,0.0716
-480,Čaglin,Požeško-slavonska,2,14016.27,744.63,0.0639
-481,Jasenovac,Sisačko-moslavačka,1,22846.17,1401.63,0.0686
-482,Donja Motičina,Osječko-baranjska,1,19448.22,1100.93,0.0437
-483,Kapela,Bjelovarsko-bilogorska,1,16226.04,999.93,0.0552
-484,Brinje,Ličko-senjska,1,20504.51,1451.22,0.0459
-485,Proložac,Splitsko-dalmatinska,1,16023.76,537.03,0.1194
-486,Donja Voća,Varaždinska,1,14395.8,576.05,0.0448
-487,Negoslavci,Vukovarsko-srijemska,1,16784.68,442.27,0.0889
-488,Petlovac,Osječko-baranjska,1,20442.21,1375.36,0.0604
-489,Podravska Moslavina,Osječko-baranjska,1,16503.52,1097.54,0.04
-490,Crnac,Virovitičko-podravska,1,18637.48,2271.18,0.0467
-491,Nova Rača,Bjelovarsko-bilogorska,1,16963.41,948.16,0.0646
-492,Lovreć,Splitsko-dalmatinska,1,19353.84,1079.05,0.108
-493,Unešić,Šibensko-kninska,1,26269.68,1548.57,0.0868
-494,Trnava,Osječko-baranjska,1,15254.94,940.37,0.0603
-495,Staro Petrovo Selo,Brodsko-posavska,1,17904.9,1064.34,0.0667
-496,Udbina,Ličko-senjska,1,19561.32,2200.72,0.1068
-497,Špišić Bukovica,Virovitičko-podravska,1,15040.27,1046.56,0.0433
-498,Lukač,Virovitičko-podravska,1,17428.32,1342.39,0.0447
-499,Trpinja,Vukovarsko-srijemska,1,15326.41,1116.74,0.0842
-500,Zagvozd,Splitsko-dalmatinska,1,23278.43,2298.2,0.0757
-501,Berek,Bjelovarsko-bilogorska,1,15702.93,1274.09,0.0414
-502,Suhopolje,Virovitičko-podravska,1,17087.3,1092.77,0.0636
-503,Tompojevci,Vukovarsko-srijemska,1,21601.99,1518.7,0.0839
-504,Štitar,Vukovarsko-srijemska,1,14115.64,566.64,0.0607
-505,Severin,Bjelovarsko-bilogorska,1,18066.46,1395.44,0.0262
-506,Zažablje,Dubrovačko-neretvanska,1,20122.59,654.37,0.0789
-507,Dežanovac,Bjelovarsko-bilogorska,1,16474.05,847.92,0.0361
-508,Babina Greda,Vukovarsko-srijemska,1,12956.53,752.04,0.0422
-509,Glina,Sisačko-moslavačka,1,22762.4,1478.08,0.0982
-510,Mikleuš,Virovitičko-podravska,1,15667.29,787.78,0.0636
-511,Nova Bukovica,Virovitičko-podravska,1,19375.22,1465.91,0.0521
-512,Viljevo,Osječko-baranjska,1,15575.21,1098.69,0.0463
-513,Drenje,Osječko-baranjska,1,14618,676.76,0.0387
-514,Drenovci,Vukovarsko-srijemska,1,15587.87,1373.96,0.0537
-515,Stara Gradiška,Brodsko-posavska,1,20264.7,1197.22,0.0758
-516,Čađavica,Virovitičko-podravska,1,16192.22,1530.89,0.0433
-517,Velika Pisanica,Bjelovarsko-bilogorska,1,15523.57,1110.86,0.0519
-518,Lećevica,Splitsko-dalmatinska,1,27279.59,1651.07,0.0513
-519,Gračac,Zadarska,1,18955.35,1333.17,0.0908
-520,Vojnić,Karlovačka,1,13100.21,686.74,0.0677
-521,Podgorač,Osječko-baranjska,1,15113.67,1397,0.0407
-522,Markušica,Vukovarsko-srijemska,1,13007.64,667.68,0.0936
-523,Draž,Osječko-baranjska,1,19325.66,1209.63,0.08
-524,Gradina,Virovitičko-podravska,1,14548.7,1108.49,0.0465
-525,Cista Provo,Splitsko-dalmatinska,1,15868.22,742.57,0.0774
-526,Popovac,Osječko-baranjska,1,20195.35,1856.31,0.0502
-527,Sopje,Virovitičko-podravska,1,15147.46,1232.36,0.0304
-528,Zrinski Topolovac,Bjelovarsko-bilogorska,1,10161.91,867.6,0.0359
-529,Voćin,Virovitičko-podravska,1,12580.34,1367.4,0.0535
-530,Lokvičići,Splitsko-dalmatinska,1,16614.96,1549.35,0.0446
-531,Šodolovci,Osječko-baranjska,1,16540.02,1065.19,0.0765
-532,Saborsko,Karlovačka,1,23044.91,3681.86,0.0793
-533,Majur,Sisačko-moslavačka,1,21678.74,928.05,0.0749
-534,Gornji Bogićevci,Brodsko-posavska,1,13659.11,874.78,0.0547
-535,Sunja,Sisačko-moslavačka,1,20087.43,1009.49,0.0673
-536,Levanjska Varoš,Osječko-baranjska,1,11696.79,933.17,0.0392
-537,Vrbje,Brodsko-posavska,1,14291.83,780.42,0.0341
-538,Jagodnjak,Osječko-baranjska,1,14140.62,1290.92,0.0433
-539,Cetingrad,Karlovačka,1,19382.95,1125.49,0.0594
-540,Hrvatska Dubica,Sisačko-moslavačka,1,17019.33,1050.31,0.0984
-541,Okučani,Brodsko-posavska,1,15196.91,763.8,0.0636
-542,Gunja,Vukovarsko-srijemska,1,12733,579.8,0.0732
-543,Žumberak,Zagrebačka,1,22515.63,1746.36,0.0659
-544,Plaški,Karlovačka,1,14642.03,694.91,0.1048
-545,Kijevo,Šibensko-kninska,1,28778.79,1601.73,0.0427
-546,Krnjak,Karlovačka,1,13493.39,828.26,0.0893
-547,Đulovac,Bjelovarsko-bilogorska,1,11514.99,613.34,0.0237
-548,Dvor,Sisačko-moslavačka,1,15798.24,742.27,0.1168
-549,Vrhovine,Ličko-senjska,1,12468.37,2011.82,0.1147
-550,Donji Lapac,Ličko-senjska,1,17204.87,886.89,0.1308
-551,Kistanje,Šibensko-kninska,1,8947.59,386.83,0.0948
-552,Donji Kukuruzari,Sisačko-moslavačka,1,13110.16,482.97,0.0611
-553,Gvozd,Sisačko-moslavačka,1,15364.54,902.38,0.0823
-554,Biskupija,Šibensko-kninska,1,16363.81,1149.27,0.1272
-555,Ervenik,Šibensko-kninska,1,14498.85,589.57,0.1326
-556,Civljane,Šibensko-kninska,1,17671.99,4448.79,0.0256
+1,Kostrena,Primorsko-goranska,8,119.349,119.45,140.04
+2,Grad Zagreb,Grad Zagreb,8,117.633,133.66,137.36
+3,Funtana – Fontane,Istarska,8,115.569,113.07,111.37
+4,Bale – Valle,Istarska,8,115.441,118.41,109.38
+5,Omišalj,Primorsko-goranska,8,113.922,119.70,119.42
+6,Medulin,Istarska,8,113.826,113.95,123.21
+7,Sveta Nedjelja,Zagrebačka,8,113.524,128.02,115.06
+8,Kolan,Zadarska,8,113.326,103.87,112.83
+9,Samobor,Zagrebačka,8,113.014,128.19,118.23
+10,Tar-Vabriga – Torre-Abrega,Istarska,8,112.901,109.71,103.60
+11,Malinska-Dubašnica,Primorsko-goranska,8,112.891,113.95,114.17
+12,Krk,Primorsko-goranska,8,112.797,115.31,112.40
+13,Dubrovnik,Dubrovačko-neretvanska,8,112.591,114.56,131.26
+14,Poreč – Parenzo,Istarska,8,112.580,118.50,114.55
+15,Zaprešić,Zagrebačka,8,112.024,124.84,121.62
+16,Kanfanar,Istarska,8,111.852,120.68,107.87
+17,Varaždin,Varaždinska,8,111.831,123.00,126.50
+18,Bol,Splitsko-dalmatinska,8,111.721,105.36,115.70
+19,Opatija,Primorsko-goranska,8,111.613,117.65,129.78
+20,Stupnik,Zagrebačka,8,111.499,113.29,108.70
+21,Kastav,Primorsko-goranska,8,111.267,119.07,129.55
+22,Vrbnik,Primorsko-goranska,8,111.261,112.64,116.65
+23,Novalja,Ličko-senjska,8,111.184,105.61,109.15
+24,Viškovo,Primorsko-goranska,8,111.160,111.06,117.49
+25,Rovinj – Rovigno,Istarska,8,111.155,120.73,116.57
+26,Punat,Primorsko-goranska,8,110.881,118.86,116.33
+27,Cres,Primorsko-goranska,8,110.848,116.90,115.21
+28,Dobrinj,Primorsko-goranska,8,110.785,119.20,111.03
+29,Novigrad – Cittanova,Istarska,8,110.777,115.26,114.28
+30,Baška,Primorsko-goranska,8,110.367,109.54,111.67
+31,Umag – Umago,Istarska,8,110.285,114.54,110.06
+32,Župa Dubrovačka,Dubrovačko-neretvanska,8,110.191,110.64,117.17
+33,Vrsar – Orsera,Istarska,8,110.177,120.10,106.35
+34,Sveti Petar u Šumi,Istarska,8,110.110,111.44,112.42
+35,Velika Gorica,Zagrebačka,8,110.076,118.97,114.78
+36,Konavle,Dubrovačko-neretvanska,8,109.858,111.92,117.68
+37,Kršan,Istarska,8,109.775,116.63,104.35
+38,Fažana – Fasana,Istarska,8,109.732,113.17,117.50
+39,Čakovec,Međimurska,8,109.629,113.27,117.90
+40,Buzet,Istarska,8,109.532,116.96,110.99
+41,Zabok,Krapinsko-zagorska,8,109.527,120.05,115.01
+42,Zadar,Zadarska,8,109.450,108.18,126.09
+43,Tinjan,Istarska,8,109.415,111.39,109.09
+44,Podstrana,Splitsko-dalmatinska,8,109.375,97.83,122.23
+45,Sutivan,Splitsko-dalmatinska,8,109.362,101.27,114.70
+46,Pazin,Istarska,8,109.344,117.01,116.90
+47,Hvar,Splitsko-dalmatinska,8,109.222,107.28,114.03
+48,Nin,Zadarska,8,109.186,104.04,109.95
+49,Biograd na Moru,Zadarska,8,109.119,105.10,110.95
+50,Mali Lošinj,Primorsko-goranska,8,108.803,116.59,112.96
+51,Vižinada – Visinada,Istarska,8,108.757,113.24,105.87
+52,Makarska,Splitsko-dalmatinska,8,108.732,103.36,116.88
+53,Dugo Selo,Zagrebačka,8,108.389,110.57,110.47
+54,Koprivnica,Koprivničko-križevačka,8,108.376,117.12,118.27
+55,Kaštelir-Labinci – Castelliere-S. Domenica,Istarska,8,108.262,104.70,105.52
+56,Ližnjan – Lisignano,Istarska,8,108.138,107.45,112.43
+57,Bakar,Primorsko-goranska,8,108.105,111.91,112.11
+58,Pula – Pola,Istarska,8,108.066,116.05,120.15
+59,Dugopolje,Splitsko-dalmatinska,8,107.872,101.85,101.49
+60,Šenkovec,Međimurska,8,107.839,114.18,116.08
+61,Matulji,Primorsko-goranska,8,107.654,114.01,117.66
+62,Marčana,Istarska,8,107.601,111.31,109.56
+63,Čavle,Primorsko-goranska,8,107.562,112.19,112.16
+64,Pićan,Istarska,8,107.454,110.14,107.61
+65,Rijeka,Primorsko-goranska,8,107.420,120.68,128.57
+66,Žminj,Istarska,8,107.405,113.34,104.78
+67,Solin,Splitsko-dalmatinska,8,107.360,103.95,115.12
+68,Stubičke Toplice,Krapinsko-zagorska,8,107.356,117.42,111.35
+69,Krapina,Krapinsko-zagorska,7,107.294,116.98,112.64
+70,Milna,Splitsko-dalmatinska,7,107.107,112.88,104.95
+71,Brdovec,Zagrebačka,7,106.994,115.56,107.18
+72,Višnjan – Visignano,Istarska,7,106.983,112.97,103.51
+73,Split,Splitsko-dalmatinska,7,106.955,111.12,130.66
+74,Labin,Istarska,7,106.806,119.34,115.23
+75,Jastrebarsko,Zagrebačka,7,106.774,114.78,108.35
+76,Osijek,Osječko-baranjska,7,106.768,116.92,124.60
+77,Oroslavje,Krapinsko-zagorska,7,106.728,115.71,109.94
+78,Klis,Splitsko-dalmatinska,7,106.635,100.71,109.08
+79,Ston,Dubrovačko-neretvanska,7,106.634,113.72,105.92
+80,Supetar,Splitsko-dalmatinska,7,106.629,104.46,111.74
+81,Gospić,Ličko-senjska,7,106.492,112.38,114.29
+82,Karlovac,Karlovačka,7,106.481,116.71,115.72
+83,Postira,Splitsko-dalmatinska,7,106.412,102.27,112.40
+84,Vodnjan – Dignano,Istarska,7,106.347,103.36,105.34
+85,Strahoninec,Međimurska,7,106.260,111.18,107.90
+86,Sveti Lovreč,Istarska,7,106.136,113.39,100.69
+87,Baška Voda,Splitsko-dalmatinska,7,106.131,95.34,114.03
+88,Crikvenica,Primorsko-goranska,7,106.100,108.65,116.69
+89,Karojba,Istarska,7,106.100,109.85,103.89
+90,Svetvinčenat,Istarska,7,106.016,107.89,103.50
+91,Gračišće,Istarska,7,105.917,112.34,105.86
+92,Klana,Primorsko-goranska,7,105.806,110.51,108.63
+93,Lopar,Primorsko-goranska,7,105.775,99.46,103.53
+94,Brtonigla – Verteneglio,Istarska,7,105.772,103.48,100.84
+95,Klinča Sela,Zagrebačka,7,105.760,110.76,103.51
+96,Jasenice,Zadarska,7,105.744,108.86,98.86
+97,Lovran,Primorsko-goranska,7,105.718,114.81,118.76
+98,Tkon,Zadarska,7,105.717,97.27,105.96
+99,Sveta Nedelja,Istarska,7,105.691,111.04,106.19
+100,Bistra,Zagrebačka,7,105.690,111.30,102.30
+101,Ludbreg,Varaždinska,7,105.674,110.56,105.45
+102,Zemunik Donji,Zadarska,7,105.664,102.10,98.27
+103,Brela,Splitsko-dalmatinska,7,105.658,96.72,112.58
+104,Ivanić-Grad,Zagrebačka,7,105.635,111.35,108.58
+105,Kraljevica,Primorsko-goranska,7,105.552,111.50,116.83
+106,Sukošan,Zadarska,7,105.520,99.47,106.30
+107,Šibenik,Šibensko-kninska,7,105.516,109.96,118.30
+108,Pušća,Zagrebačka,7,105.444,112.88,102.29
+109,Privlaka,Zadarska,7,105.394,97.48,110.38
+110,Barban,Istarska,7,105.359,115.54,107.96
+111,Hum na Sutli,Krapinsko-zagorska,7,105.333,115.22,99.83
+112,Povljana,Zadarska,7,105.308,99.92,111.21
+113,Murter-Kornati,Šibensko-kninska,7,105.276,98.98,110.95
+114,Jelsa,Splitsko-dalmatinska,7,105.171,97.08,116.44
+115,Krapinske Toplice,Krapinsko-zagorska,7,105.141,115.70,105.66
+116,Grožnjan – Grisignana,Istarska,7,105.100,101.18,104.18
+117,Korčula,Dubrovačko-neretvanska,7,105.072,98.21,118.40
+118,Rab,Primorsko-goranska,7,104.992,108.30,107.49
+119,Dugi Rat,Splitsko-dalmatinska,7,104.802,100.99,112.12
+120,Marija Gorica,Zagrebačka,7,104.785,110.90,103.96
+121,Tučepi,Splitsko-dalmatinska,7,104.762,95.72,112.04
+122,Stari Grad,Splitsko-dalmatinska,7,104.683,101.34,110.09
+123,Duga Resa,Karlovačka,7,104.636,113.71,107.19
+124,Primošten,Šibensko-kninska,7,104.620,99.97,107.21
+125,Kali,Zadarska,7,104.607,108.89,103.98
+126,Mošćenička Draga,Primorsko-goranska,7,104.550,108.90,116.95
+127,Bilice,Šibensko-kninska,7,104.509,96.86,107.24
+128,Ivanec,Varaždinska,7,104.496,109.88,103.05
+129,Prelog,Međimurska,7,104.448,106.33,104.45
+130,Križevci,Koprivničko-križevačka,7,104.412,105.82,107.59
+131,Jelenje,Primorsko-goranska,7,104.403,108.63,104.27
+132,Gornji Kneginec,Varaždinska,7,104.360,110.22,101.40
+133,Sveti Ivan Zelina,Zagrebačka,7,104.326,107.87,101.82
+134,Poličnik,Zadarska,7,104.302,99.18,98.20
+135,Sveti Filip i Jakov,Zadarska,7,104.249,96.19,103.15
+136,Jakovlje,Zagrebačka,6,104.169,107.64,97.29
+137,Vis,Splitsko-dalmatinska,6,104.137,104.08,113.92
+138,Fužine,Primorsko-goranska,6,104.069,123.85,104.19
+139,Plitvička Jezera,Ličko-senjska,6,104.069,107.63,102.16
+140,Zlatar Bistrica,Krapinsko-zagorska,6,104.065,110.76,105.74
+141,Novi Vinodolski,Primorsko-goranska,6,103.950,110.50,111.03
+142,Sveti Ilija,Varaždinska,6,103.925,109.33,100.20
+143,Starigrad,Zadarska,6,103.869,107.36,103.26
+144,Vinkovci,Vukovarsko-srijemska,6,103.825,105.89,114.46
+145,Lupoglav,Istarska,6,103.817,111.27,100.92
+146,Omiš,Splitsko-dalmatinska,6,103.799,99.89,107.86
+147,Buje – Buie,Istarska,6,103.776,105.63,105.79
+148,Trogir,Splitsko-dalmatinska,6,103.769,99.94,114.10
+149,Vodice,Šibensko-kninska,6,103.652,95.50,109.70
+150,Pregrada,Krapinsko-zagorska,6,103.613,107.54,99.63
+151,Luka,Zagrebačka,6,103.605,109.53,97.71
+152,Bjelovar,Bjelovarsko-bilogorska,6,103.599,107.20,109.49
+153,Delnice,Primorsko-goranska,6,103.588,112.98,108.28
+154,Marija Bistrica,Krapinsko-zagorska,6,103.586,108.08,100.35
+155,Cerovlje,Istarska,6,103.559,108.91,105.18
+156,Lastovo,Dubrovačko-neretvanska,6,103.481,103.66,114.55
+157,Nerežišća,Splitsko-dalmatinska,6,103.458,100.16,101.15
+158,Zlatar,Krapinsko-zagorska,6,103.450,104.66,101.67
+159,Preko,Zadarska,6,103.434,111.58,112.52
+160,Trnovec Bartolovečki,Varaždinska,6,103.378,108.81,99.57
+161,Bibinje,Zadarska,6,103.367,94.95,100.77
+162,Rakovica,Karlovačka,6,103.362,106.77,95.17
+163,Veliko Trgovišće,Krapinsko-zagorska,6,103.322,106.87,101.40
+164,Donja Stubica,Krapinsko-zagorska,6,103.307,105.26,103.45
+165,Pašman,Zadarska,6,103.307,102.89,104.36
+166,Tribunj,Šibensko-kninska,6,103.306,92.39,107.14
+167,Pakoštane,Zadarska,6,103.290,92.27,100.25
+168,Tisno,Šibensko-kninska,6,103.275,98.24,106.49
+169,Kaštela,Splitsko-dalmatinska,6,103.259,99.19,111.94
+170,Sveti Križ Začretje,Krapinsko-zagorska,6,103.200,107.15,99.27
+171,Blato,Dubrovačko-neretvanska,6,103.125,102.23,108.72
+172,Tuhelj,Krapinsko-zagorska,6,103.107,103.28,96.81
+173,Konjščina,Krapinsko-zagorska,6,103.094,111.10,101.55
+174,Novi Marof,Varaždinska,6,103.005,108.67,99.89
+175,Radoboj,Krapinsko-zagorska,6,102.953,108.80,100.11
+176,Orebić,Dubrovačko-neretvanska,6,102.908,93.51,114.23
+177,Raša,Istarska,6,102.898,114.41,103.37
+178,Varaždinske Toplice,Varaždinska,6,102.875,111.81,100.04
+179,Pisarovina,Zagrebačka,6,102.862,103.96,95.64
+180,Sračinec,Varaždinska,6,102.860,103.05,94.80
+181,Vrsi,Zadarska,6,102.821,93.07,99.93
+182,Ogulin,Karlovačka,6,102.776,108.43,104.99
+183,Oprtalj – Portole,Istarska,6,102.768,100.62,106.40
+184,Požega,Požeško-slavonska,6,102.730,106.12,115.68
+185,Pag,Zadarska,6,102.715,104.29,104.45
+186,Vinodolska Općina,Primorsko-goranska,6,102.703,104.58,104.07
+187,Lovinac,Ličko-senjska,6,102.696,96.09,100.98
+188,Đurđevac,Koprivničko-križevačka,6,102.652,99.16,104.95
+189,Rogoznica,Šibensko-kninska,6,102.646,104.12,104.30
+190,Ljubešćica,Varaždinska,6,102.633,106.41,95.35
+191,Daruvar,Bjelovarsko-bilogorska,6,102.607,107.31,111.53
+192,Sisak,Sisačko-moslavačka,6,102.537,114.60,110.24
+193,Sveti Juraj na Bregu,Međimurska,6,102.535,97.66,97.95
+194,Bedenica,Zagrebačka,6,102.526,105.46,96.15
+195,Bedekovčina,Krapinsko-zagorska,6,102.510,106.25,97.74
+196,Vrbovec,Zagrebačka,6,102.507,104.86,102.11
+197,Virovitica,Virovitičko-podravska,6,102.504,106.95,109.04
+198,Seget,Splitsko-dalmatinska,6,102.502,99.73,108.10
+199,Dubrovačko Primorje,Dubrovačko-neretvanska,6,102.470,110.64,107.99
+200,Motovun – Montona,Istarska,6,102.456,100.21,101.05
+201,Beretinec,Varaždinska,6,102.376,106.22,94.92
+202,Klanjec,Krapinsko-zagorska,6,102.262,111.38,98.35
+203,Okrug,Splitsko-dalmatinska,5,102.261,95.89,117.08
+204,Draganić,Karlovačka,5,102.259,103.32,100.81
+205,Nedelišće,Međimurska,5,102.246,101.36,99.13
+206,Mljet,Dubrovačko-neretvanska,5,102.117,105.95,104.07
+207,Veliki Bukovec,Varaždinska,5,102.113,104.95,93.21
+208,Donji Kraljevec,Međimurska,5,102.032,103.88,100.58
+209,Posedarje,Zadarska,5,101.973,100.24,97.00
+210,Polača,Zadarska,5,101.932,93.37,97.73
+211,Ozalj,Karlovačka,5,101.928,106.54,100.60
+212,Komiža,Splitsko-dalmatinska,5,101.854,110.70,106.73
+213,Vidovec,Varaždinska,5,101.774,103.02,97.60
+214,Đurmanec,Krapinsko-zagorska,5,101.771,105.96,97.95
+215,Trpanj,Dubrovačko-neretvanska,5,101.764,94.25,123.48
+216,Vinica,Varaždinska,5,101.636,101.86,95.95
+217,Podgora,Splitsko-dalmatinska,5,101.591,95.03,112.41
+218,Kalinovac,Koprivničko-križevačka,5,101.569,97.75,100.98
+219,Kutina,Sisačko-moslavačka,5,101.558,106.82,105.95
+220,Križ,Zagrebačka,5,101.512,105.17,98.59
+221,Sveta Marija,Međimurska,5,101.481,108.77,98.41
+222,Lumbarda,Dubrovačko-neretvanska,5,101.444,88.87,106.89
+223,Kloštar Ivanić,Zagrebačka,5,101.416,102.23,97.81
+224,Kravarsko,Zagrebačka,5,101.411,106.71,92.33
+225,Vir,Zadarska,5,101.407,91.61,100.68
+226,Petrovsko,Krapinsko-zagorska,5,101.382,106.63,98.64
+227,Zadvarje,Splitsko-dalmatinska,5,101.372,99.77,114.34
+228,Rugvica,Zagrebačka,5,101.344,102.31,93.57
+229,Slavonski Brod,Brodsko-posavska,5,101.301,103.38,111.18
+230,Jesenje,Krapinsko-zagorska,5,101.273,104.43,98.37
+231,Drniš,Šibensko-kninska,5,101.268,108.82,106.53
+232,Klenovnik,Varaždinska,5,101.130,103.72,95.19
+233,Gornja Stubica,Krapinsko-zagorska,5,100.943,103.79,96.06
+234,Antunovac,Osječko-baranjska,5,100.873,102.84,95.86
+235,Sinj,Splitsko-dalmatinska,5,100.823,99.84,106.73
+236,Škabrnja,Zadarska,5,100.818,102.40,92.72
+237,Ražanac,Zadarska,5,100.815,98.06,102.53
+238,Galovac,Zadarska,5,100.779,98.35,92.63
+239,Koprivnički Ivanec,Koprivničko-križevačka,5,100.701,98.09,97.51
+240,Smokvica,Dubrovačko-neretvanska,5,100.641,90.46,110.33
+241,Našice,Osječko-baranjska,5,100.560,103.21,107.26
+242,Dekanovec,Međimurska,5,100.533,90.50,96.36
+243,Molve,Koprivničko-križevačka,5,100.529,89.46,94.21
+244,Dubravica,Zagrebačka,5,100.506,107.12,97.75
+245,Pučišća,Splitsko-dalmatinska,5,100.479,98.94,102.78
+246,Dicmo,Splitsko-dalmatinska,5,100.442,94.71,94.15
+247,Sali,Zadarska,5,100.426,114.74,107.80
+248,Ploče,Dubrovačko-neretvanska,5,100.388,106.26,112.33
+249,Josipdol,Karlovačka,5,100.385,101.38,96.89
+250,Sveti Martin na Muri,Međimurska,5,100.356,93.14,96.83
+251,Novigrad,Zadarska,5,100.302,103.52,95.67
+252,Vukovar,Vukovarsko-srijemska,5,100.291,107.70,109.38
+253,Maruševec,Varaždinska,5,100.285,103.12,93.60
+254,Kumrovec,Krapinsko-zagorska,5,100.281,105.93,95.78
+255,Kotoriba,Međimurska,5,100.238,97.31,94.25
+256,Petrijanec,Varaždinska,5,100.226,94.34,93.53
+257,Orahovica,Virovitičko-podravska,5,100.201,103.84,105.18
+258,Brckovljani,Zagrebačka,5,100.159,98.45,95.74
+259,Petrinja,Sisačko-moslavačka,5,100.147,106.76,101.97
+260,Slunj,Karlovačka,5,100.145,108.57,99.92
+261,Pakrac,Požeško-slavonska,5,100.141,104.17,100.20
+262,Kraljevec na Sutli,Krapinsko-zagorska,5,100.139,99.99,91.72
+263,Barilović,Karlovačka,5,100.124,102.97,95.62
+264,Senj,Ličko-senjska,5,100.107,108.30,107.05
+265,Novi Golubovec,Krapinsko-zagorska,5,100.072,106.46,95.06
+266,Donja Dubrava,Međimurska,5,100.054,100.24,99.31
+267,Skrad,Primorsko-goranska,5,100.036,121.00,108.57
+268,Ravna Gora,Primorsko-goranska,5,100.034,111.12,100.58
+269,Čazma,Bjelovarsko-bilogorska,5,100.028,100.70,96.97
+270,Lekenik,Sisačko-moslavačka,4,99.997,105.98,94.01
+271,Popovača,Sisačko-moslavačka,4,99.976,101.55,97.16
+272,Vela Luka,Dubrovačko-neretvanska,4,99.958,96.03,107.67
+273,Belica,Međimurska,4,99.898,97.92,94.70
+274,Kamanje,Karlovačka,4,99.887,91.62,102.11
+275,Mala Subotica,Međimurska,4,99.840,92.00,95.76
+276,Bilje,Osječko-baranjska,4,99.829,103.88,102.69
+277,Opuzen,Dubrovačko-neretvanska,4,99.722,95.41,111.59
+278,Hrašćina,Krapinsko-zagorska,4,99.721,98.71,92.60
+279,Pribislavec,Međimurska,4,99.718,92.62,95.69
+280,Metković,Dubrovačko-neretvanska,4,99.714,95.95,111.41
+281,Breznički Hum,Varaždinska,4,99.688,100.99,94.84
+282,Gornji Mihaljevec,Međimurska,4,99.669,94.39,94.16
+283,Otočac,Ličko-senjska,4,99.657,102.63,102.48
+284,Mače,Krapinsko-zagorska,4,99.644,98.83,94.01
+285,Čabar,Primorsko-goranska,4,99.542,104.49,105.24
+286,Mursko Središće,Međimurska,4,99.513,91.20,98.01
+287,Žakanje,Karlovačka,4,99.506,88.35,103.33
+288,Jalžabet,Varaždinska,4,99.422,99.21,93.74
+289,Lepoglava,Varaždinska,4,99.395,99.08,97.99
+290,Čepin,Osječko-baranjska,4,99.351,103.92,101.87
+291,Breznica,Varaždinska,4,99.351,96.46,91.75
+292,Mihovljan,Krapinsko-zagorska,4,99.300,102.38,92.66
+293,Rakovec,Zagrebačka,4,99.247,91.15,99.14
+294,Šolta,Splitsko-dalmatinska,4,99.216,113.83,117.13
+295,Marina,Splitsko-dalmatinska,4,99.215,94.64,100.49
+296,Drnje,Koprivničko-križevačka,4,99.202,100.82,95.63
+297,Vrgorac,Splitsko-dalmatinska,4,99.139,98.34,102.09
+298,Klakar,Brodsko-posavska,4,99.127,96.36,96.92
+299,Budinščina,Krapinsko-zagorska,4,99.104,96.16,91.28
+300,Lipik,Požeško-slavonska,4,99.019,100.70,95.76
+301,Selca,Splitsko-dalmatinska,4,99.011,95.56,104.44
+302,Donji Vidovec,Međimurska,4,98.903,95.23,96.13
+303,Lanišće,Istarska,4,98.865,110.29,98.43
+304,Lokve,Primorsko-goranska,4,98.864,106.18,101.69
+305,Virje,Koprivničko-križevačka,4,98.851,93.56,95.16
+306,Velika Ludina,Sisačko-moslavačka,4,98.813,97.28,92.15
+307,Đelekovec,Koprivničko-križevačka,4,98.780,102.43,101.15
+308,Đakovo,Osječko-baranjska,4,98.774,98.16,106.36
+309,Nova Gradiška,Brodsko-posavska,4,98.767,102.93,105.90
+310,Benkovac,Zadarska,4,98.766,98.84,93.38
+311,Pirovac,Šibensko-kninska,4,98.693,97.96,104.63
+312,Orle,Zagrebačka,4,98.668,96.48,91.35
+313,Županja,Vukovarsko-srijemska,4,98.597,101.40,110.73
+314,Martijanec,Varaždinska,4,98.580,101.00,90.49
+315,Gola,Koprivničko-križevačka,4,98.560,87.79,86.22
+316,Gornja Vrba,Brodsko-posavska,4,98.539,92.85,94.74
+317,Netretić,Karlovačka,4,98.513,105.08,92.42
+318,Sveti Đurđ,Varaždinska,4,98.478,97.58,89.18
+319,Kalnik,Koprivničko-križevačka,4,98.353,89.29,97.36
+320,Gradec,Zagrebačka,4,98.316,95.83,92.17
+321,Štrigova,Međimurska,4,98.164,89.25,95.26
+322,Kukljica,Zadarska,4,98.148,112.51,106.22
+323,Mali Bukovec,Varaždinska,4,98.133,100.78,91.45
+324,Cestica,Varaždinska,4,98.122,83.97,93.33
+325,Stankovci,Zadarska,4,98.109,95.35,90.42
+326,Donji Miholjac,Osječko-baranjska,4,98.092,97.63,100.19
+327,Lipovljani,Sisačko-moslavačka,4,98.079,102.69,95.24
+328,Lasinja,Karlovačka,4,98.013,102.21,93.78
+329,Goričan,Međimurska,4,98.010,95.86,96.33
+330,Vratišinec,Međimurska,4,97.972,93.97,93.46
+331,Valpovo,Osječko-baranjska,4,97.970,102.24,102.95
+332,Slivno,Dubrovačko-neretvanska,4,97.964,95.88,98.58
+333,Mrkopalj,Primorsko-goranska,4,97.860,114.94,99.74
+334,Ernestinovo,Osječko-baranjska,4,97.819,101.63,91.92
+335,Jakšić,Požeško-slavonska,4,97.815,94.50,100.55
+336,Lobor,Krapinsko-zagorska,4,97.797,93.38,97.47
+337,Podravske Sesvete,Koprivničko-križevačka,4,97.770,87.02,90.61
+338,Ivankovo,Vukovarsko-srijemska,4,97.516,94.44,95.12
+339,Hlebine,Koprivničko-križevačka,4,97.505,90.66,89.75
+340,Visoko,Varaždinska,4,97.488,90.87,90.83
+341,Krašić,Zagrebačka,4,97.481,100.96,94.05
+342,Hrvace,Splitsko-dalmatinska,3,97.475,102.06,94.70
+343,Slatina,Virovitičko-podravska,3,97.450,97.90,101.05
+344,Nuštar,Vukovarsko-srijemska,3,97.391,96.78,98.26
+345,Legrad,Koprivničko-križevačka,3,97.380,96.48,94.94
+346,Novigrad Podravski,Koprivničko-križevačka,3,97.314,94.24,99.53
+347,Orehovica,Međimurska,3,97.240,80.47,87.97
+348,Peteranec,Koprivničko-križevačka,3,97.190,93.90,91.72
+349,Tovarnik,Vukovarsko-srijemska,3,97.176,99.05,96.52
+350,Imotski,Splitsko-dalmatinska,3,97.160,93.14,111.71
+351,Koprivnički Bregi,Koprivničko-križevačka,3,97.123,94.28,92.73
+352,Pokupsko,Zagrebačka,3,97.117,98.81,90.20
+353,Lovas,Vukovarsko-srijemska,3,97.044,97.44,96.01
+354,Čeminac,Osječko-baranjska,3,97.019,99.90,89.77
+355,Bukovlje,Brodsko-posavska,3,97.004,92.07,97.00
+356,Selnica,Međimurska,3,97.003,87.87,94.60
+357,Gradac,Splitsko-dalmatinska,3,96.970,88.72,113.56
+358,Novska,Sisačko-moslavačka,3,96.965,100.83,95.93
+359,Otok,Splitsko-dalmatinska,3,96.819,90.66,93.13
+360,Sveti Ivan Žabno,Koprivničko-križevačka,3,96.816,89.83,90.69
+361,Domašinec,Međimurska,3,96.781,89.21,94.07
+362,Bosiljevo,Karlovačka,3,96.758,98.07,93.63
+363,Ferdinandovac,Koprivničko-križevačka,3,96.664,89.26,95.56
+364,Andrijaševci,Vukovarsko-srijemska,3,96.610,93.55,93.36
+365,Bednja,Varaždinska,3,96.563,93.31,93.38
+366,Desinić,Krapinsko-zagorska,3,96.547,93.02,91.74
+367,Petrijevci,Osječko-baranjska,3,96.519,96.75,97.42
+368,Knin,Šibensko-kninska,3,96.507,97.81,100.45
+369,Hercegovac,Bjelovarsko-bilogorska,3,96.424,99.76,93.03
+370,Podturen,Međimurska,3,96.421,86.80,89.99
+371,Jarmina,Vukovarsko-srijemska,3,96.381,98.04,91.24
+372,Perušić,Ličko-senjska,3,96.298,100.20,96.68
+373,Generalski Stol,Karlovačka,3,96.274,105.30,90.24
+374,Muć,Splitsko-dalmatinska,3,96.268,96.32,88.40
+375,Garešnica,Bjelovarsko-bilogorska,3,96.201,95.93,94.92
+376,Sibinj,Brodsko-posavska,3,96.178,93.55,94.43
+377,Zagorska Sela,Krapinsko-zagorska,3,96.164,90.95,94.87
+378,Promina,Šibensko-kninska,3,96.151,97.02,101.12
+379,Sirač,Bjelovarsko-bilogorska,3,96.115,95.58,89.43
+380,Belišće,Osječko-baranjska,3,96.080,99.33,97.80
+381,Trilj,Splitsko-dalmatinska,3,96.075,90.14,93.94
+382,Vođinci,Vukovarsko-srijemska,3,96.066,91.45,93.57
+383,Dubrava,Zagrebačka,3,96.055,90.42,92.10
+384,Primorski Dolac,Splitsko-dalmatinska,3,96.011,98.14,88.35
+385,Grubišno Polje,Bjelovarsko-bilogorska,3,96.000,93.97,95.31
+386,Velika,Požeško-slavonska,3,95.917,91.93,97.31
+387,Oprisavci,Brodsko-posavska,3,95.898,96.31,93.19
+388,Pitomača,Virovitičko-podravska,3,95.888,88.76,92.44
+389,Gornja Rijeka,Koprivničko-križevačka,3,95.878,84.09,87.19
+390,Novo Virje,Koprivničko-križevačka,3,95.862,84.93,87.55
+391,Sveti Petar Orehovec,Koprivničko-križevačka,3,95.812,82.77,91.47
+392,Cerna,Vukovarsko-srijemska,3,95.792,93.92,90.30
+393,Vrbovsko,Primorsko-goranska,3,95.716,108.08,99.08
+394,Karlobag,Ličko-senjska,3,95.674,105.49,106.52
+395,Nijemci,Vukovarsko-srijemska,3,95.649,95.91,89.49
+396,Obrovac,Zadarska,3,95.609,96.61,99.30
+397,Martinska Ves,Sisačko-moslavačka,3,95.559,96.65,92.99
+398,Brodski Stupnik,Brodsko-posavska,3,95.539,99.43,92.04
+399,Pleternica,Požeško-slavonska,3,95.530,91.45,96.74
+400,Rasinja,Koprivničko-križevačka,3,95.516,91.70,91.21
+401,Podbablje,Splitsko-dalmatinska,3,95.501,91.87,105.04
+402,Oriovac,Brodsko-posavska,3,95.475,93.16,93.45
+403,Podcrkavlje,Brodsko-posavska,3,95.461,89.97,90.67
+404,Lišane Ostrovičke,Zadarska,3,95.424,96.94,91.09
+405,Otok,Vukovarsko-srijemska,3,95.424,95.96,92.81
+406,Bizovac,Osječko-baranjska,3,95.405,98.41,96.17
+407,Veliko Trojstvo,Bjelovarsko-bilogorska,3,95.396,91.79,89.79
+408,Zmijavci,Splitsko-dalmatinska,3,95.391,95.32,108.68
+409,Donji Andrijevci,Brodsko-posavska,3,95.385,91.09,93.60
+410,Rovišće,Bjelovarsko-bilogorska,3,95.355,85.76,91.01
+411,Vuka,Osječko-baranjska,3,95.331,99.90,86.67
+412,Velika Trnovitica,Bjelovarsko-bilogorska,3,95.250,90.56,92.03
+413,Preseka,Zagrebačka,3,95.231,92.64,89.28
+414,Satnica Đakovačka,Osječko-baranjska,2,95.199,91.19,91.62
+415,Kutjevo,Požeško-slavonska,2,95.178,93.23,94.93
+416,Stari Mikanovci,Vukovarsko-srijemska,2,95.145,90.56,91.97
+417,Garčin,Brodsko-posavska,2,95.107,91.88,91.93
+418,Štefanje,Bjelovarsko-bilogorska,2,95.078,88.73,90.20
+419,Tounj,Karlovačka,2,95.034,94.89,83.46
+420,Ilok,Vukovarsko-srijemska,2,94.981,99.22,99.23
+421,Feričanci,Osječko-baranjska,2,94.898,95.40,97.11
+422,Skradin,Šibensko-kninska,2,94.868,99.17,94.51
+423,Magadenovac,Osječko-baranjska,2,94.857,91.20,89.07
+424,Donja Voća,Varaždinska,2,94.852,85.35,89.45
+425,Beli Manastir,Osječko-baranjska,2,94.806,103.11,102.91
+426,Ivanska,Bjelovarsko-bilogorska,2,94.697,94.92,89.88
+427,Veliki Grđevac,Bjelovarsko-bilogorska,2,94.691,91.88,91.58
+428,Šestanovac,Splitsko-dalmatinska,2,94.664,92.93,96.20
+429,Gradište,Vukovarsko-srijemska,2,94.662,90.50,93.67
+430,Cernik,Brodsko-posavska,2,94.635,95.38,92.62
+431,Tordinci,Vukovarsko-srijemska,2,94.474,93.65,88.60
+432,Gundinci,Brodsko-posavska,2,94.443,86.89,89.01
+433,Marijanci,Osječko-baranjska,2,94.414,92.39,87.94
+434,Donja Motičina,Osječko-baranjska,2,94.388,93.82,89.93
+435,Kloštar Podravski,Koprivničko-križevačka,2,94.313,83.00,89.90
+436,Privlaka,Vukovarsko-srijemska,2,94.268,92.95,93.52
+437,Bebrina,Brodsko-posavska,2,94.263,86.28,86.05
+438,Vrpolje,Brodsko-posavska,2,94.253,88.71,92.23
+439,Velika Kopanica,Brodsko-posavska,2,94.207,89.20,90.97
+440,Sokolovac,Koprivničko-križevačka,2,94.148,89.23,86.89
+441,Punitovci,Osječko-baranjska,2,94.084,91.27,88.34
+442,Runovići,Splitsko-dalmatinska,2,94.072,92.21,103.08
+443,Hrvatska Kostajnica,Sisačko-moslavačka,2,94.062,104.10,99.92
+444,Koška,Osječko-baranjska,2,93.968,94.39,89.58
+445,Zagvozd,Splitsko-dalmatinska,2,93.919,96.01,93.48
+446,Čačinci,Virovitičko-podravska,2,93.913,96.39,94.88
+447,Brestovac,Požeško-slavonska,2,93.868,91.86,91.14
+448,Lovreć,Splitsko-dalmatinska,2,93.856,91.88,99.27
+449,Glina,Sisačko-moslavačka,2,93.826,97.07,92.39
+450,Stari Jankovci,Vukovarsko-srijemska,2,93.818,93.26,91.40
+451,Nova Kapela,Brodsko-posavska,2,93.813,93.07,90.55
+452,Sikirevci,Brodsko-posavska,2,93.794,84.58,93.17
+453,Ružić,Šibensko-kninska,2,93.779,96.01,88.58
+454,Strizivojna,Osječko-baranjska,2,93.731,88.29,89.16
+455,Vrlika,Splitsko-dalmatinska,2,93.728,98.91,93.81
+456,Semeljci,Osječko-baranjska,2,93.699,94.51,89.07
+457,Saborsko,Karlovačka,2,93.683,97.44,90.94
+458,Viškovci,Osječko-baranjska,2,93.676,99.81,89.19
+459,Topusko,Sisačko-moslavačka,2,93.554,101.43,99.24
+460,Kaptol,Požeško-slavonska,2,93.499,90.74,94.27
+461,Rešetari,Brodsko-posavska,2,93.499,92.19,89.62
+462,Farkaševac,Zagrebačka,2,93.489,84.88,85.72
+463,Brod Moravice,Primorsko-goranska,2,93.459,104.90,96.49
+464,Udbina,Ličko-senjska,2,93.450,100.17,88.22
+465,Končanica,Bjelovarsko-bilogorska,2,93.434,92.65,89.48
+466,Bogdanovci,Vukovarsko-srijemska,2,93.408,92.38,93.25
+467,Kapela,Bjelovarsko-bilogorska,2,93.397,89.18,89.92
+468,Vladislavci,Osječko-baranjska,2,93.370,92.69,85.88
+469,Proložac,Splitsko-dalmatinska,2,93.281,86.71,102.15
+470,Zdenci,Virovitičko-podravska,2,93.237,92.69,90.66
+471,Lećevica,Splitsko-dalmatinska,2,93.083,100.82,88.22
+472,Nova Rača,Bjelovarsko-bilogorska,2,93.058,89.62,86.94
+473,Kula Norinska,Dubrovačko-neretvanska,2,92.971,94.76,96.51
+474,Ribnik,Karlovačka,2,92.860,90.60,102.40
+475,Vrbanja,Vukovarsko-srijemska,2,92.750,94.67,89.27
+476,Dežanovac,Bjelovarsko-bilogorska,2,92.715,87.86,87.04
+477,Brinje,Ličko-senjska,2,92.703,91.18,88.30
+478,Šandrovac,Bjelovarsko-bilogorska,2,92.608,84.88,85.37
+479,Pojezerje,Dubrovačko-neretvanska,2,92.583,84.40,95.67
+480,Staro Petrovo Selo,Brodsko-posavska,2,92.560,90.78,90.16
+481,Crnac,Virovitičko-podravska,2,92.479,92.90,87.48
+482,Špišić Bukovica,Virovitičko-podravska,2,92.367,86.58,86.74
+483,Đurđenovac,Osječko-baranjska,2,92.291,91.85,90.17
+484,Severin,Bjelovarsko-bilogorska,2,92.165,94.18,84.90
+485,Darda,Osječko-baranjska,1,92.129,95.51,93.87
+486,Davor,Brodsko-posavska,1,92.049,86.26,90.39
+487,Sućuraj,Splitsko-dalmatinska,1,91.858,94.26,104.92
+488,Unešić,Šibensko-kninska,1,91.804,100.65,93.03
+489,Berek,Bjelovarsko-bilogorska,1,91.765,87.54,87.28
+490,Čađavica,Virovitičko-podravska,1,91.743,91.50,84.10
+491,Jasenovac,Sisačko-moslavačka,1,91.722,99.06,90.25
+492,Erdut,Osječko-baranjska,1,91.668,97.02,92.14
+493,Kneževi Vinogradi,Osječko-baranjska,1,91.656,97.27,91.09
+494,Dragalić,Brodsko-posavska,1,91.642,91.31,86.02
+495,Nova Bukovica,Virovitičko-podravska,1,91.595,96.06,86.51
+496,Sopje,Virovitičko-podravska,1,91.535,90.83,84.84
+497,Cetingrad,Karlovačka,1,91.385,94.36,90.41
+498,Bošnjaci,Vukovarsko-srijemska,1,91.310,86.84,94.31
+499,Tompojevci,Vukovarsko-srijemska,1,91.250,102.03,91.84
+500,Podravska Moslavina,Osječko-baranjska,1,91.114,87.73,84.32
+501,Trnava,Osječko-baranjska,1,91.070,87.99,88.51
+502,Podgorač,Osječko-baranjska,1,90.908,84.99,86.05
+503,Viljevo,Osječko-baranjska,1,90.825,84.49,88.35
+504,Velika Pisanica,Bjelovarsko-bilogorska,1,90.814,85.65,87.06
+505,Suhopolje,Virovitičko-podravska,1,90.737,87.36,89.16
+506,Štitar,Vukovarsko-srijemska,1,90.589,84.92,91.64
+507,Lukač,Virovitičko-podravska,1,90.587,88.74,87.72
+508,Gorjani,Osječko-baranjska,1,90.526,91.04,86.23
+509,Zrinski Topolovac,Bjelovarsko-bilogorska,1,90.389,76.27,84.47
+510,Mikleuš,Virovitičko-podravska,1,90.244,88.09,91.19
+511,Čaglin,Požeško-slavonska,1,90.222,79.80,87.81
+512,Trpinja,Vukovarsko-srijemska,1,90.183,85.40,92.09
+513,Gračac,Zadarska,1,89.801,96.34,92.29
+514,Babina Greda,Vukovarsko-srijemska,1,89.790,79.41,86.40
+515,Lokvičići,Splitsko-dalmatinska,1,89.707,86.02,95.00
+516,Šodolovci,Osječko-baranjska,1,89.656,90.75,87.27
+517,Cista Provo,Splitsko-dalmatinska,1,89.641,84.75,96.88
+518,Slavonski Šamac,Brodsko-posavska,1,89.551,81.68,91.83
+519,Gradina,Virovitičko-podravska,1,89.520,86.19,86.15
+520,Borovo,Vukovarsko-srijemska,1,89.503,87.63,94.44
+521,Vojnić,Karlovačka,1,89.469,80.86,88.18
+522,Janjina,Dubrovačko-neretvanska,1,89.408,91.67,108.70
+523,Negoslavci,Vukovarsko-srijemska,1,89.224,92.55,92.55
+524,Plaški,Karlovačka,1,89.155,83.08,91.18
+525,Drenje,Osječko-baranjska,1,89.086,85.40,84.80
+526,Drenovci,Vukovarsko-srijemska,1,88.892,85.75,88.46
+527,Krnjak,Karlovačka,1,88.883,87.20,88.58
+528,Zažablje,Dubrovačko-neretvanska,1,88.428,97.08,91.18
+529,Petlovac,Osječko-baranjska,1,88.271,90.79,88.05
+530,Sunja,Sisačko-moslavačka,1,87.794,93.25,87.51
+531,Vrbje,Brodsko-posavska,1,87.777,84.42,84.96
+532,Markušica,Vukovarsko-srijemska,1,87.385,84.20,92.29
+533,Hrvatska Dubica,Sisačko-moslavačka,1,87.374,88.62,91.42
+534,Đulovac,Bjelovarsko-bilogorska,1,87.007,78.17,81.88
+535,Stara Gradiška,Brodsko-posavska,1,86.711,92.89,87.81
+536,Draž,Osječko-baranjska,1,86.309,94.24,89.17
+537,Prgomet,Splitsko-dalmatinska,1,86.086,103.78,89.80
+538,Popovac,Osječko-baranjska,1,86.078,92.64,83.97
+539,Majur,Sisačko-moslavačka,1,85.854,97.77,87.82
+540,Voćin,Virovitičko-podravska,1,85.326,75.94,86.11
+541,Jagodnjak,Osječko-baranjska,1,85.160,87.50,85.27
+542,Civljane,Šibensko-kninska,1,85.015,88.56,88.65
+543,Gornji Bogićevci,Brodsko-posavska,1,84.593,84.70,87.46
+544,Gunja,Vukovarsko-srijemska,1,84.351,78.41,89.83
+545,Donji Kukuruzari,Sisačko-moslavačka,1,83.930,85.29,85.70
+546,Vrhovine,Ličko-senjska,1,83.117,82.31,91.83
+547,Okučani,Brodsko-posavska,1,83.034,82.98,86.32
+548,Levanjska Varoš,Osječko-baranjska,1,82.798,80.49,86.48
+549,Kijevo,Šibensko-kninska,1,81.068,105.49,91.64
+550,Biskupija,Šibensko-kninska,1,79.768,82.49,92.81
+551,Gvozd,Sisačko-moslavačka,1,79.690,84.75,92.77
+552,Dvor,Sisačko-moslavačka,1,79.034,88.65,91.32
+553,Žumberak,Zagrebačka,1,78.136,93.55,88.22
+554,Donji Lapac,Ličko-senjska,1,77.765,85.17,94.14
+555,Kistanje,Šibensko-kninska,1,77.682,68.23,88.21
+556,Ervenik,Šibensko-kninska,1,67.259,73.31,100.65
