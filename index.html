@@ -25,11 +25,6 @@
   <body>
     <div id="map"></div>
     <script src="app.js"></script>
-
-    <!-- add a tooltip element that will be used to display 3 values:
-    - the name of the municipality
-    - the number of votes for the winning party
-    - th enumber of votes for the second party -->
     <div
       id="tooltip"
       style="
@@ -43,14 +38,20 @@
         color: #333;
         font-family: 'Helvetica', Arial, sans-serif;
         font-size: 14px;
-        max-width: 320px;
+        width: 350px;
+        max-width: 350px;
         z-index: 9999;
       "
     >
       <!-- Title -->
       <div
         id="tooltip-title"
-        style="font-size: 18px; font-weight: bold; margin-bottom: 2px; text-transform: capitalize;"
+        style="
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 2px;
+          text-transform: capitalize;
+        "
       >
         Bale - Valle
       </div>
@@ -67,6 +68,8 @@
       <table style="width: 100%; border-collapse: collapse">
         <thead style="font-size: 11px; color: #777">
           <tr style="border-bottom: 1px solid #ddd">
+            <!-- Empty header for the image column -->
+            <th style="text-align: left; padding: 8px"></th>
             <th style="text-align: left; padding: 8px">Kandidat</th>
             <th style="text-align: right; padding: 8px">Ukupno</th>
             <th style="text-align: right; padding: 8px">Postotak</th>
@@ -75,23 +78,21 @@
         <tbody>
           <!-- Candidate 1 row -->
           <tr>
-            <td
-              style="padding: 8px; display: flex; align-items: center; gap: 6px"
-            >
-              <!-- Profile image -->
+            <!-- Profile image in its own TD -->
+            <td style="padding: 8px; text-align: center">
               <img
                 id="candidate1-img"
                 src="https://www.index.hr/Content/img/homepageBanners/presidential-elections-2024/second-round/1.png"
                 alt="Candidate 1"
                 style="
-                  width: 32px;
-                  height: 32px;
+                  width: 24px;
+                  height: 24px;
                   border-radius: 50%;
                   object-fit: cover;
                 "
               />
-              <span id="candidate1-name">Milanović</span>
             </td>
+            <td id="candidate1-name" style="padding: 8px">Milanović</td>
             <td id="candidate1-total" style="padding: 8px; text-align: right">
               461
             </td>
@@ -102,23 +103,21 @@
 
           <!-- Candidate 2 row -->
           <tr>
-            <td
-              style="padding: 8px; display: flex; align-items: center; gap: 6px"
-            >
-              <!-- Profile image -->
+            <!-- Profile image in its own TD -->
+            <td style="padding: 8px; text-align: center">
               <img
                 id="candidate2-img"
                 src="https://www.index.hr/Content/img/homepageBanners/presidential-elections-2024/second-round/2.png"
                 alt="Candidate 2"
                 style="
-                  width: 32px;
-                  height: 32px;
+                  width: 24px;
+                  height: 24px;
                   border-radius: 50%;
                   object-fit: cover;
                 "
               />
-              <span id="candidate2-name">Primorac</span>
             </td>
+            <td id="candidate2-name" style="padding: 8px">Primorac</td>
             <td id="candidate2-total" style="padding: 8px; text-align: right">
               77
             </td>
@@ -134,7 +133,7 @@
         id="tooltip-footer"
         style="margin-top: 10px; font-size: 12px; color: #777"
       >
-        94%? prebrojanih glasova.
+        100% prebrojanih glasova.
       </div>
     </div>
   </body>
