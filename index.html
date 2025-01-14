@@ -47,6 +47,23 @@
         border: 1px solid #ddd;
         box-shadow: none;
       }
+
+      #tooltip {
+        position: absolute;
+        display: none;
+        background: #fff;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        color: #333;
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 350px;
+        max-width: 350px;
+        z-index: 9999;
+        pointer-events: none;
+      }
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/flubber"></script>
@@ -68,24 +85,7 @@
       </select>
     </div>
     <script src="app.js"></script>
-    <div
-      id="tooltip"
-      style="
-        position: absolute;
-        display: none;
-        background: #fff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        color: #333;
-        font-family: sans-serif;
-        font-size: 14px;
-        width: 350px;
-        max-width: 350px;
-        z-index: 9999;
-      "
-    >
+    <div id="tooltip">
       <!-- Title -->
       <div
         id="tooltip-title"
