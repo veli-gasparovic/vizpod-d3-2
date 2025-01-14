@@ -33,7 +33,7 @@ let izbori2025 = null;
 const DURATION = 300;
 const DELAY = 1;
 
-const margin = { top: 40, right: 30, bottom: 30, left: 40 };
+const margin = { top: 50, right: 30, bottom: 30, left: 40 };
 
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
@@ -121,7 +121,7 @@ function createScatterPlot() {
   y = d3
     .scaleLinear()
     .domain([dohodakExtent[0] * 0.9, dohodakExtent[1] * 1.1])
-    .rangeRound([height - margin.top - margin.bottom, margin.top])
+    .rangeRound([height - margin.top - margin.bottom, 0])
     .clamp(true);
 
   const obrazovanjeExtent = d3.extent(jlsData, (d) => d.obrazovanje);
@@ -140,7 +140,7 @@ function createScatterPlot() {
         g
           .append("text")
           .attr("x", -margin.left + 15)
-          .attr("y", margin.top - 10)
+          .attr("y", -10)
           .attr("fill", "currentColor")
           .attr("font-size", 12)
           .attr("text-anchor", "start")
@@ -223,7 +223,7 @@ function createScatterPlot() {
 
       svg
         .append("text")
-        .attr("x", width - margin.right)
+        .attr("x", width - margin.right - 4)
         .attr("y", height - margin.bottom - 48)
         .attr("fill", "currentColor")
         .attr("font-size", 12)
@@ -368,7 +368,7 @@ function renderGeography() {
     .attr("width", width - margin.left - margin.right)
     .attr("height", height - margin.bottom - margin.top)
     .attr("x", 0)
-    .attr("y", margin.top);
+    .attr("y", 0);
 
   let mainGroup = svg
     .append("g")
@@ -386,8 +386,7 @@ function renderGeography() {
     .attr("height", height - margin.top - margin.bottom)
     .attr("x", 0)
     .attr("y", 0)
-    .attr("fill", "lightcyan");
-  // .attr("fill-opacity", 0.5);
+    .attr("fill", "#f9f9f9");
 
   const pathGroup = plotArea.append("g").attr("class", "pathGroup");
 
