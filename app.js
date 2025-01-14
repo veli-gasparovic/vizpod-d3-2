@@ -132,7 +132,7 @@ function wrangleData() {
     .rotate([-15, 0])
     .fitExtent(
       [
-        [0, 20],
+        [0, 10],
         [width * 0.9, height * 0.9],
       ],
       topoData
