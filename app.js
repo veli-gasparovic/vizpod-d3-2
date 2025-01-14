@@ -33,7 +33,7 @@ let izbori2025 = null;
 const DURATION = 300;
 const DELAY = 1;
 
-const margin = { top: 70, right: 30, bottom: 30, left: 40 };
+const margin = { top: 40, right: 30, bottom: 30, left: 40 };
 
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
@@ -117,32 +117,30 @@ function createScatterPlot() {
   //y scale: "↑ Prosječni dohodak po stanovniku", field "dohodak"
   //x scale: "Stupanj obrazovanja (VSS, 20-65) →", field "obrazovanje"
 
+  const dohodakExtent = d3.extent(jlsData, (d) => d.dohodak);
   y = d3
     .scaleLinear()
-    .domain(d3.extent(jlsData, (d) => d.dohodak))
+    .domain([dohodakExtent[0] * 0.9, dohodakExtent[1] * 1.1])
     .rangeRound([height - margin.top - margin.bottom, margin.top])
     .clamp(true);
 
+  const obrazovanjeExtent = d3.extent(jlsData, (d) => d.obrazovanje);
   x = d3
     .scaleLinear()
-    .domain(d3.extent(jlsData, (d) => d.obrazovanje))
-    .rangeRound([0, width]);
+    .domain([obrazovanjeExtent[0] * 0.95, obrazovanjeExtent[1] * 1.05])
+    .rangeRound([0, width - margin.left - margin.right]);
 
   yAxis = (g) =>
     g
-      .attr("transform", `translate(${margin.left},0)`)
+      // .attr("transform", `translate(${margin.left},0)`)
       .attr("class", "y-axis")
       .attr("font-size", 14)
-      .call(
-        d3.axisLeft(y).ticks(null, ",d").tickFormat(d3.format(".2s"))
-        // .tickFormat(d => (d == 100 ? `${d}%` : d))
-      )
-      .call((g) => g.select(".domain").remove())
+      .call(d3.axisLeft(y).ticks(null, ",d").tickFormat(d3.format(".2s")))
       .call((g) =>
         g
           .append("text")
           .attr("x", -margin.left + 15)
-          .attr("y", y(d3.max(jlsData, (d) => d.dohodak)))
+          .attr("y", margin.top - 10)
           .attr("fill", "currentColor")
           .attr("font-size", 12)
           .attr("text-anchor", "start")
@@ -155,14 +153,14 @@ function createScatterPlot() {
 
   xAxis = (g) =>
     g
-      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .attr("transform", `translate(0,${height - margin.bottom - margin.top})`)
       .attr("class", "x-axis")
       .call(d3.axisBottom(x).ticks(width / 80))
-      .call((g) => g.select(".domain").remove())
+      // .call((g) => g.select(".domain").remove())
       .call((g) =>
         g
           .append("text")
-          .attr("x", width - margin.right)
+          .attr("x", width - margin.right - margin.left)
           .attr("y", -10)
           .attr("fill", "currentColor")
           .attr("font-size", 12)
@@ -293,7 +291,10 @@ function createScatterPlot() {
         .scaleExtent([1, 40]) // Min and max zoom scales
         .extent([
           [0, 0],
-          [width, height],
+          [
+            width - margin.right - margin.left,
+            height - margin.bottom - margin.top,
+          ],
         ])
         .on("zoom", zoomed);
 
@@ -305,9 +306,6 @@ function createScatterPlot() {
         // Transform the scatter plot
         pathGroup.attr("transform", transform);
 
-        // Update circle sizes inversely with zoom
-        pathGroup.selectAll("circle").attr("r", 5 / transform.k);
-
         // update circle stroke width inversely with zoom
         pathGroup
           .selectAll("path")
@@ -317,15 +315,15 @@ function createScatterPlot() {
           .select(".x-axis")
           .transition()
           .duration(200) // Adjust the duration as needed
-          .call(d3.axisBottom(transform.rescaleX(x)))
-          .call((g) => g.select(".domain").remove());
+          .call(d3.axisBottom(transform.rescaleX(x)));
+        // .call((g) => g.select(".domain").remove());
 
         svg
           .select(".y-axis")
           .transition()
           .duration(200)
-          .call(d3.axisLeft(transform.rescaleY(y)))
-          .call((g) => g.select(".domain").remove());
+          .call(d3.axisLeft(transform.rescaleY(y)));
+        // .call((g) => g.select(".domain").remove());
       }
 
       svg.call(zoom);
@@ -368,8 +366,8 @@ function renderGeography() {
     .attr("id", "clip")
     .append("rect")
     .attr("width", width - margin.left - margin.right)
-    .attr("height", height - margin.top - margin.bottom)
-    .attr("x", margin.left)
+    .attr("height", height - margin.bottom - margin.top)
+    .attr("x", 0)
     .attr("y", margin.top);
 
   let mainGroup = svg
@@ -377,26 +375,19 @@ function renderGeography() {
     .attr("class", "mainGroup")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
-  let plotArea = mainGroup
-    .append("g")
-    .attr("class", "plotGroup")
-    .attr("clip-path", "url(#clip)");
+  let plotArea = mainGroup.append("g").attr("class", "plotGroup");
 
-  // add a rectangle to catch zoom events
+  plotArea.attr("clip-path", "url(#clip)").attr("transform", "translate(0,0)");
+  // add background color to plot area
+
   plotArea
     .append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .attr("fill", "white")
-    .attr("pointer-events", "all");
-
-  // add a clip path with the same size as the rectangle
-  plotArea
-    .append("clipPath")
-    .attr("id", "clip")
-    .append("rect")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", width - margin.left - margin.right)
+    .attr("height", height - margin.top - margin.bottom)
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("fill", "lightcyan");
+  // .attr("fill-opacity", 0.5);
 
   const pathGroup = plotArea.append("g").attr("class", "pathGroup");
 
