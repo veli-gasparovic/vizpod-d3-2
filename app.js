@@ -30,10 +30,10 @@ let x,
 
 let izbori2025 = null;
 
-// const DURATION = 3000;
-// const DELAY = 6;
-const DURATION = 300;
-const DELAY = 1;
+const DURATION = 3000;
+const DELAY = 6;
+// const DURATION = 300;
+// const DELAY = 1;
 
 let zoom = null;
 
