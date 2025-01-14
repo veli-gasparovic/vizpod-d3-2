@@ -238,6 +238,7 @@ function createScatterPlot() {
       svg
         .selectAll("path")
         .on("mouseover", function (event, d) {
+          if (!d) return;
           let tooltip = d3.select("#tooltip");
           tooltip.style("display", "block");
 
