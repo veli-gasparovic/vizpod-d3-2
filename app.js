@@ -30,8 +30,10 @@ let izbori2025 = null;
 
 // const DURATION = 3000;
 // const DELAY = 6;
-const DURATION = 3;
-const DELAY = 0;
+const DURATION = 300;
+const DELAY = 1;
+
+const margin = { top: 70, right: 30, bottom: 30, left: 40 };
 
 promises.push(d3.json("hrvatska.topo.json"));
 promises.push(d3.csv("stanovnistvo_povrsina.csv"));
@@ -115,17 +117,16 @@ function createScatterPlot() {
   //y scale: "↑ Prosječni dohodak po stanovniku", field "dohodak"
   //x scale: "Stupanj obrazovanja (VSS, 20-65) →", field "obrazovanje"
 
-  const margin = { top: 70, right: 30, bottom: 30, left: 40 };
   y = d3
     .scaleLinear()
     .domain(d3.extent(jlsData, (d) => d.dohodak))
-    .rangeRound([height - margin.bottom, margin.top])
+    .rangeRound([height - margin.top - margin.bottom, margin.top])
     .clamp(true);
 
   x = d3
     .scaleLinear()
     .domain(d3.extent(jlsData, (d) => d.obrazovanje))
-    .rangeRound([margin.left, width - margin.right]);
+    .rangeRound([0, width]);
 
   yAxis = (g) =>
     g
@@ -206,14 +207,15 @@ function createScatterPlot() {
     .end()
     .then(() => {
       //append x axis and y axis
-      svg
+      const mainGroup = svg.select(".mainGroup");
+      mainGroup
         .append("g")
         .call(xAxis)
         .attr("opacity", 0)
         .transition()
         .duration(250)
         .attr("opacity", 1);
-      svg
+      mainGroup
         .append("g")
         .call(yAxis)
         .attr("opacity", 0)
@@ -251,8 +253,8 @@ function createScatterPlot() {
           tooltip
             .select("#candidate1-percent")
             .text(
-              d3.format(".2%")(
-                d.properties.votes.milanovic / d.properties.votes.count
+              d3.format(".2f")(
+                (d.properties.votes.milanovic / d.properties.votes.count) * 100
               )
             );
 
@@ -262,8 +264,8 @@ function createScatterPlot() {
           tooltip
             .select("#candidate2-percent")
             .text(
-              d3.format(".2%")(
-                d.properties.votes.primorac / d.properties.votes.count
+              d3.format(".2f")(
+                (d.properties.votes.primorac / d.properties.votes.count) * 100
               )
             );
 
@@ -286,34 +288,47 @@ function createScatterPlot() {
         });
 
       // add zoom to .pathGroup', make sure to make a nice transition of axis
+      const zoom = d3
+        .zoom()
+        .scaleExtent([1, 40]) // Min and max zoom scales
+        .extent([
+          [0, 0],
+          [width, height],
+        ])
+        .on("zoom", zoomed);
 
-      const pathGroup = svg.select(".pathGroup");
+      function zoomed(event) {
+        const transform = event.transform;
 
-      pathGroup.call(
-        d3.zoom().on("zoom", function (event) {
-          const { transform } = event;
+        const pathGroup = svg.select(".pathGroup");
 
-          // console.log(transform);
-          pathGroup.attr("transform", transform);
+        // Transform the scatter plot
+        pathGroup.attr("transform", transform);
 
-          // decrease the stroke width as we zoom in
-          svg.selectAll("path").style("stroke-width", 1 / transform.k + "px");
+        // Update circle sizes inversely with zoom
+        pathGroup.selectAll("circle").attr("r", 5 / transform.k);
 
-          svg
-            .select(".x-axis")
-            .transition()
-            .duration(200) // Adjust the duration as needed
-            .call(d3.axisBottom(transform.rescaleX(x)))
-            .call((g) => g.select(".domain").remove());
+        // update circle stroke width inversely with zoom
+        pathGroup
+          .selectAll("path")
+          .style("stroke-width", 3 / transform.k + "px");
 
-          svg
-            .select(".y-axis")
-            .transition()
-            .duration(200)
-            .call(d3.axisLeft(transform.rescaleY(y)))
-            .call((g) => g.select(".domain").remove());
-        })
-      );
+        svg
+          .select(".x-axis")
+          .transition()
+          .duration(200) // Adjust the duration as needed
+          .call(d3.axisBottom(transform.rescaleX(x)))
+          .call((g) => g.select(".domain").remove());
+
+        svg
+          .select(".y-axis")
+          .transition()
+          .duration(200)
+          .call(d3.axisLeft(transform.rescaleY(y)))
+          .call((g) => g.select(".domain").remove());
+      }
+
+      svg.call(zoom);
     });
 }
 
@@ -332,7 +347,7 @@ function transformToCircles(selection) {
           d.properties.centroid[1],
           d.properties.radius,
           {
-            maxSegmentLength: 2,
+            maxSegmentLength: 3,
           }
         );
       })
@@ -352,16 +367,23 @@ function renderGeography() {
     .append("clipPath")
     .attr("id", "clip")
     .append("rect")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", width - margin.left - margin.right)
+    .attr("height", height - margin.top - margin.bottom)
+    .attr("x", margin.left)
+    .attr("y", margin.top);
 
-  //apply the clip path to the svg element
-  svg.attr("clip-path", "url(#clip)");
+  let mainGroup = svg
+    .append("g")
+    .attr("class", "mainGroup")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
 
-  let pathGroup = svg.append("g").attr("class", "pathGroup");
+  let plotArea = mainGroup
+    .append("g")
+    .attr("class", "plotGroup")
+    .attr("clip-path", "url(#clip)");
 
   // add a rectangle to catch zoom events
-  pathGroup
+  plotArea
     .append("rect")
     .attr("width", width)
     .attr("height", height)
@@ -369,12 +391,14 @@ function renderGeography() {
     .attr("pointer-events", "all");
 
   // add a clip path with the same size as the rectangle
-  pathGroup
+  plotArea
     .append("clipPath")
     .attr("id", "clip")
     .append("rect")
     .attr("width", width)
     .attr("height", height);
+
+  const pathGroup = plotArea.append("g").attr("class", "pathGroup");
 
   let opcineSelection = pathGroup
     .selectAll("path")
