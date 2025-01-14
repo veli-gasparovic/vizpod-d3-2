@@ -9,6 +9,8 @@ let jlsData = null;
 let promises = [];
 let radiusScale = null;
 
+let BACKGROUND = "#f9f9f9";
+
 let width = document.getElementById("map").clientWidth;
 
 // cap with to 1200:
@@ -28,10 +30,12 @@ let x,
 
 let izbori2025 = null;
 
-const DURATION = 3000;
-const DELAY = 6;
-// const DURATION = 300;
-// const DELAY = 1;
+// const DURATION = 3000;
+// const DELAY = 6;
+const DURATION = 300;
+const DELAY = 1;
+
+let zoom = null;
 
 const margin = { top: 50, right: 30, bottom: 30, left: 40 };
 
@@ -79,6 +83,45 @@ Promise.all(promises).then(function (data) {
   wrangleData();
 });
 
+// After your data is loaded and municipalities are created, populate the dropdown
+function populateDropdown() {
+  const select = d3.select("#municipality-select");
+
+  // Sort municipalities by name
+  const sortedMunicipalities = municipalities
+    .filter((m) => m.properties.jls.obrazovanje) // Only include ones with data
+    .sort((a, b) => a.properties.name.localeCompare(b.properties.name, "hr"));
+
+  // Add options to select
+  select
+    .selectAll("option")
+    .data(sortedMunicipalities)
+    .enter()
+    .append("option")
+    .attr("value", (d) => d.properties.name)
+    .text((d) => d.properties.name);
+
+  // Initialize chosen
+  $(document).ready(function () {
+    $("#municipality-select").chosen({
+      allow_single_deselect: true,
+      no_results_text: "Nije pronađeno: ",
+    });
+
+    // Add change handler
+    $("#municipality-select").on("change", function (e, params) {
+      const selectedName = params.selected;
+      const selected = municipalities.find(
+        (m) => m.properties.name === selectedName
+      );
+
+      if (selected) {
+        zoomToMunicipality(selected);
+      }
+    });
+  });
+}
+
 function wrangleData() {
   //extract features (opcine)
   const topoData = topojson.feature(croatia, croatia.objects.hrvatska);
@@ -101,15 +144,63 @@ function wrangleData() {
 
   municipalities = getMunicipalityData(topoData);
 
-  console.log(municipalities);
+  // console.log(municipalities);
+  populateDropdown();
 
   let opcineSelection = renderGeography();
 
   transformToCircles(opcineSelection)
     .end()
     .then(() => {
-      console.log("transfored to circles.");
       createScatterPlot();
+    });
+}
+
+// Add a function to zoom to a specific municipality
+function zoomToMunicipality(municipality) {
+  // Get the municipality's coordinates in our scale space
+  const targetX = x(municipality.properties.jls.obrazovanje);
+  const targetY = y(municipality.properties.jls.dohodak);
+
+  const scale = 8; // Adjust this value to control zoom level
+
+  // Calculate the transform accounting for margins
+  const transform = d3.zoomIdentity
+    .translate(
+      margin.left - targetX * scale + (width - margin.left - margin.right) / 2,
+      margin.top - targetY * scale + (height - margin.top - margin.bottom) / 2
+    )
+    .scale(scale);
+
+  // Apply the transform with a smooth transition
+  svg
+    .transition()
+    .duration(750)
+    .call(zoom.transform, transform)
+    .on("end", () => {
+      // Highlight the selected municipality
+
+      svg
+        .selectAll("path")
+        .filter((d) => d === municipality)
+        .transition()
+        .duration(250)
+        .style("stroke", function () {
+          const fill = d3.select(this).attr("fill");
+          return fill;
+        })
+        .transition()
+        .duration(250)
+        .style("stroke", BACKGROUND)
+        .transition()
+        .duration(250)
+        .style("stroke", function () {
+          const fill = d3.select(this).attr("fill");
+          return fill;
+        })
+        .transition()
+        .duration(250)
+        .style("stroke", BACKGROUND);
     });
 }
 
@@ -187,7 +278,7 @@ function createScatterPlot() {
       const currentCenterY = b.y + b.height / 2;
 
       if (!d.properties.jls.obrazovanje) {
-        console.log(d);
+        // console.log(d);
         return null;
       }
 
@@ -234,6 +325,12 @@ function createScatterPlot() {
         .transition()
         .duration(250)
         .attr("opacity", 0.25);
+
+      d3.select(".dropdown-container")
+        .style("left", `${width - margin.right - 338}px`)
+        .transition()
+        .duration(250)
+        .style("opacity", 1);
 
       svg
         .selectAll("path")
@@ -287,7 +384,7 @@ function createScatterPlot() {
         });
 
       // add zoom to .pathGroup', make sure to make a nice transition of axis
-      const zoom = d3
+      zoom = d3
         .zoom()
         .scaleExtent([1, 40]) // Min and max zoom scales
         .extent([
@@ -308,9 +405,9 @@ function createScatterPlot() {
         pathGroup.attr("transform", transform);
 
         // update circle stroke width inversely with zoom
-        pathGroup
-          .selectAll("path")
-          .style("stroke-width", 3 / transform.k + "px");
+        // pathGroup
+        //   .selectAll("path")
+        //   .style("stroke-width", 5 / transform.k + "px");
 
         svg
           .select(".x-axis")
@@ -387,7 +484,7 @@ function renderGeography() {
     .attr("height", height - margin.top - margin.bottom)
     .attr("x", 0)
     .attr("y", 0)
-    .attr("fill", "#f9f9f9");
+    .attr("fill", BACKGROUND);
 
   const pathGroup = plotArea.append("g").attr("class", "pathGroup");
 
@@ -414,7 +511,7 @@ function renderGeography() {
         );
       }
     })
-    .attr("stroke", "white")
+    .attr("stroke", BACKGROUND)
     .attr("d", path);
 
   return opcineSelection;
@@ -447,8 +544,8 @@ function getMunicipalityData(topoData) {
       );
 
       if (!votingDatum) {
-        console.log(`Missing match: ${name}`);
-        console.log(municipality.properties);
+        // console.log(`Missing match: ${name}`);
+        // console.log(municipality.properties);
       }
 
       const jlsDatum = jlsData.find(

@@ -19,15 +19,54 @@
       .domain {
         opacity: 0;
       }
+      .dropdown-container {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        z-index: 1000;
+        opacity: 0;
+      }
+
+      /* Style the chosen dropdown to match your design */
+      .chosen-container {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+
+      .chosen-container-single .chosen-single {
+        height: 36px;
+        line-height: 34px;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: none;
+      }
+
+      .chosen-container-active.chosen-with-drop .chosen-single {
+        background: white;
+        border: 1px solid #ddd;
+        box-shadow: none;
+      }
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/flubber"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
     <!-- import @turf/turf@5 -->
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.jquery.min.js"></script>
   </head>
   <body>
     <div id="map"></div>
+    <div class="dropdown-container">
+      <select id="municipality-select" data-placeholder="Pretraži općinu...">
+        <option value=""></option>
+      </select>
+    </div>
     <script src="app.js"></script>
     <div
       id="tooltip"
