@@ -405,9 +405,7 @@ function createScatterPlot() {
         pathGroup.attr("transform", transform);
 
         // update circle stroke width inversely with zoom
-        // pathGroup
-        //   .selectAll("path")
-        //   .style("stroke-width", 5 / transform.k + "px");
+        pathGroup.selectAll("path").attr("stroke-width", 1 / transform.k);
 
         svg
           .select(".x-axis")
@@ -511,6 +509,7 @@ function renderGeography() {
         );
       }
     })
+    .attr("fill-opacity", 0.8)
     .attr("stroke", BACKGROUND)
     .attr("d", path);
 
